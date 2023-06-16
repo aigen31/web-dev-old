@@ -10,26 +10,72 @@
   <link rel="stylesheet" href="assets/libs/hamburgers-master/hamburgers.css">
   <link rel="stylesheet" href="assets/libs/slick-1.8.1/slick.css">
   <link rel="stylesheet" href="assets/libs/vex-master/css/vex.css">
-  <link rel="stylesheet" href="assets/libs/vex-master/css/vex-theme-os.css">
+  <link rel="stylesheet" href="assets/libs/vex-master/css/vex-theme-wireframe.css">
   <link rel="stylesheet" href="assets//css/style.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
   <title>Document</title>
 </head>
+
 <body>
-  <div class="right-line" style="background-image: url(assets/img/bg/bg-nav.jpg);">
-    <button class="hamburger hamburger--arrow" type="button">
+  <div class="right-line">
+    <button class="hamburger hamburger--arrow" id="hamburger__main" type="button">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
     </button>
   </div>
+
+  <div class="menu-wrapper">
+    <button class="menu-wrapper__close-button" id="menu-wrapper__close-button"></button>
+
+    <nav class="menu-wrapper__nav">
+      <ul class="menu-wrapper__list">
+        <li class="menu-wrapper__item"><a href="#" class="link">Портфолио</a></li>
+        <li class="menu-wrapper__item"><a href="#" class="link">Технологии</a></li>
+        <li class="menu-wrapper__item"><a href="#" class="link">Акции</a></li>
+        <li class="menu-wrapper__item"><a href="#" class="link">Блог/Статьи</a></li>
+        <li class="menu-wrapper__item"><a href="#" class="link">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+
   <section class="s-main" style="background-image: url(assets/img/bg/bg-main.jpg);">
+    <div class="s-main__socials">
+      <ul class="s-main__socials-list">
+        <li class="s-main__socials-item">
+          <a href="https://t.me/AiGen31" class="s-main__socials-link" target="_blank">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" class="social-icon"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="social__path"
+                d="M3.58337 21.5C3.58337 11.61 11.61 3.58333 21.5 3.58333C31.39 3.58333 39.4167 11.61 39.4167 21.5C39.4167 31.39 31.39 39.4167 21.5 39.4167C11.61 39.4167 3.58337 31.39 3.58337 21.5Z"
+                fill="black" />
+              <path
+                d="M21.5 3.58334C11.61 3.58334 3.58337 11.61 3.58337 21.5C3.58337 31.39 11.61 39.4167 21.5 39.4167C31.39 39.4167 39.4167 31.39 39.4167 21.5C39.4167 11.61 31.39 3.58334 21.5 3.58334ZM29.8134 15.7667C29.5446 18.5975 28.38 25.4775 27.7888 28.6488C27.538 29.9925 27.0363 30.4404 26.5705 30.4942C25.5313 30.5838 24.743 29.8133 23.7396 29.1504C22.163 28.1113 21.2671 27.4663 19.7442 26.4629C17.9705 25.2983 19.1171 24.6533 20.1384 23.6142C20.4071 23.3454 24.9938 19.1708 25.0834 18.7946C25.0958 18.7376 25.0942 18.6784 25.0786 18.6222C25.0629 18.566 25.0338 18.5145 24.9938 18.4721C24.8863 18.3825 24.743 18.4183 24.6175 18.4363C24.4563 18.4721 21.948 20.1383 17.0567 23.435C16.34 23.9188 15.695 24.1696 15.1217 24.1517C14.4767 24.1338 13.2584 23.7933 12.3446 23.4888C11.2159 23.1304 10.338 22.9333 10.4096 22.3063C10.4455 21.9838 10.8934 21.6613 11.7355 21.3208C16.9671 19.0454 20.443 17.5404 22.1809 16.8238C27.1617 14.7454 28.183 14.3871 28.8638 14.3871C29.0071 14.3871 29.3475 14.4229 29.5625 14.6021C29.7417 14.7454 29.7955 14.9425 29.8134 15.0858C29.7955 15.1933 29.8313 15.5158 29.8134 15.7667Z"
+                fill="#FFBB00" />
+            </svg>
+          </a>
+        </li>
+        <li class="s-main__socials-item">
+          <a href="https://vk.com/aigen_31" class="s-main__socials-link" target="_blank">
+            <svg width="43" height="43" viewBox="0 0 43 43" fill="none" class="social-icon" xmlns="http://www.w3.org/2000/svg">
+              <path class="social__path"
+                d="M3.58337 21.5C3.58337 11.61 11.61 3.58333 21.5 3.58333C31.39 3.58333 39.4167 11.61 39.4167 21.5C39.4167 31.39 31.39 39.4167 21.5 39.4167C11.61 39.4167 3.58337 31.39 3.58337 21.5Z"
+                fill="black" />
+              <path
+                d="M21.5 3.58334C11.6048 3.58334 3.58337 11.6048 3.58337 21.5C3.58337 31.3952 11.6048 39.4167 21.5 39.4167C31.3953 39.4167 39.4167 31.3952 39.4167 21.5C39.4167 11.6048 31.3953 3.58334 21.5 3.58334ZM28.3905 23.7974C28.3905 23.7974 29.975 25.3614 30.3651 26.0874C30.3763 26.1023 30.3819 26.1173 30.3856 26.1247C30.5442 26.3916 30.5816 26.5988 30.5032 26.7537C30.3725 27.0112 29.9246 27.1382 29.7716 27.1494H26.9721C26.778 27.1494 26.3711 27.099 25.8784 26.7593C25.4996 26.4943 25.1263 26.0594 24.7624 25.6358C24.2193 25.0049 23.749 24.46 23.2749 24.46C23.2147 24.4599 23.1549 24.4693 23.0976 24.488C22.7393 24.6037 22.2802 25.1151 22.2802 26.4775C22.2802 26.903 21.9442 27.1475 21.7072 27.1475H20.425C19.9883 27.1475 17.7133 26.9944 15.6977 24.8687C13.2304 22.2652 11.0095 17.0432 10.9908 16.9947C10.8508 16.6569 11.1401 16.4759 11.4555 16.4759H14.283C14.66 16.4759 14.7832 16.7054 14.869 16.9089C14.9698 17.1459 15.3393 18.0884 15.9459 19.1484C16.9294 20.8766 17.5322 21.5784 18.0156 21.5784C18.1063 21.5773 18.1953 21.5543 18.275 21.5112C18.9059 21.1603 18.7883 18.9114 18.7603 18.4448C18.7603 18.3571 18.7584 17.4389 18.4355 16.9984C18.2041 16.6793 17.8103 16.558 17.5714 16.5132C17.6681 16.3798 17.7955 16.2716 17.9428 16.1978C18.3758 15.9813 19.1559 15.9496 19.9305 15.9496H20.3616C21.2014 15.9608 21.4179 16.0149 21.7221 16.0914C22.338 16.2388 22.3511 16.6364 22.297 17.9969C22.2802 18.3832 22.2634 18.82 22.2634 19.3351C22.2634 19.4471 22.2578 19.5665 22.2578 19.6934C22.2391 20.3858 22.2167 21.1715 22.7057 21.4944C22.7695 21.5344 22.8432 21.5557 22.9184 21.556C23.0883 21.556 23.5996 21.556 24.9845 19.1802C25.4115 18.4155 25.7827 17.6208 26.0949 16.8025C26.1229 16.754 26.205 16.6046 26.3021 16.5468C26.3737 16.5103 26.4531 16.4917 26.5335 16.4927H29.8574C30.2195 16.4927 30.4677 16.5468 30.5144 16.6868C30.5965 16.9089 30.4994 17.5863 28.9821 19.6411L28.3046 20.5351C26.9292 22.338 26.9292 22.4294 28.3905 23.7974Z"
+                fill="#FFBB00" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <div class="container s-main__container">
       <div class="s-main__col s-main__col--left">
         <h1 class="h1 s-main__h1">
-          Сайты под ключ
+          Сайты под<br> ключ
         </h1>
 
         <ul class="s-main__list">
@@ -56,25 +102,10 @@
       </div>
     </div>
   </section>
-
-  <form action="" class="calendar-container__form">
-    <select name="select" id="calendar-container__sessions">
-      <option value="1">
-        Free consultation
-      </option>
-      <option value="2">
-        Single session
-      </option>
-    </select>
-
-    <button class="calendar-container__button">Book</button>
-  </form>
-
-  <link rel="stylesheet" href="https://static.tildacdn.com/css/tilda-forms-1.0.min.css">
 </body>
 <script src="assets/libs/jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
 <script src="assets/libs/slick-1.8.1/slick.min.js"></script>
 <script src="assets/libs/vex-master/js/vex.combined.min.js"></script>
-<script>vex.defaultOptions.className = 'vex-theme-os'</script>
+<script>vex.defaultOptions.className = 'vex-theme-wireframe'</script>
 <script src="assets/js/common.js"></script>
 </html>

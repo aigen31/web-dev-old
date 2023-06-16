@@ -1,6 +1,9 @@
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Roboto";
-  font-size: 16px;
 }
 
 body * {
@@ -46,13 +49,19 @@ img {
   display: block;
 }
 
+.svg-objects {
+  display: none;
+}
+
 .s-main {
   height: 100vh;
-  background-position: 0 50%;
-  background-size: auto 100%;
+  background-position: 0 0;
+  background-size: 78% auto;
   background-repeat: no-repeat;
   padding-top: 9.7vh;
   padding-right: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #F8F8F8;
 }
 
@@ -67,9 +76,11 @@ img {
   right: 0;
   width: auto;
   height: 100%;
+  z-index: 100;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: url(../img/bg/right-line.png);
 }
 
 .right-line .hamburger {
@@ -77,10 +88,22 @@ img {
   padding-left: 30px;
 }
 
-.right-line .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.right-line .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
   background-color: #f8f8f8;
   border-radius: 0;
   height: 3px;
+}
+
+.hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+  width: 40px;
+}
+
+.hamburger.is-active .hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger.is-active .hamburger-inner::after {
+  top: 10px;
 }
 
 .hamburger-inner::before {
@@ -96,12 +119,103 @@ img {
   right: 0;
 }
 
+.menu-wrapper {
+  position: fixed;
+  z-index: 150;
+  left: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  height: 100vh;
+  background-color: #1F1F20;
+  padding: 40px 40px;
+  transition: transform .15s ease-in-out;
+  transform: translateX(0%);
+}
+
+.menu-wrapper.active {
+  transform: translateX(-100%);
+}
+
+.menu-wrapper__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-wrapper__close-button {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url(../img/exit/close.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.menu-wrapper__item {
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+}
+
+.menu-wrapper__item:last-child {
+  margin-bottom: 0px;
+}
+
+.menu-wrapper__item .link {
+  color: #fff;
+  white-space: nowrap;
+  transition: color .15s ease;
+}
+
+.menu-wrapper__item .link:hover {
+  color: #FFBB00;
+}
+
+.social-icon .social__path {
+  transition: fill .15s ease;
+}
+
+.social-icon:hover .social__path {
+  fill: #fff;
+}
+
 .s-main__col--left {
-  width: 73%;
+  width: 75%;
 }
 
 .s-main__col--right {
-  width: 27%;
+  width: 25%;
+}
+
+.s-main__socials-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 15px;
+  position: absolute;
+  top: 35px;
+  right: 4.4vw;
+}
+
+.s-main__socials-item {
+  width: 43px;
+  height: 43px;
+}
+
+.s-main__socials-img {
+  width: 100%;
+  height: 100%;
 }
 
 .s-main__slider {
@@ -141,13 +255,16 @@ img {
   margin: 0 auto;
   float: none;
   transform: scale(0.8);
-  transition: transform .25s ease;
+  transition: transform .15s ease;
 }
 
-
+.s-main__slider-item.slick-slide  {
+  border: 3px solid #1F1F20;
+}
 
 .s-main__slider-item.slick-current {
   transform: scale(1);
+  border-style: dashed;
 }
 
 .s-main__slider-btn {
@@ -160,7 +277,7 @@ img {
   box-sizing: border-box;
   text-align: center;
   text-decoration: none;
-  transition: all .25s ease;
+  transition: all .15s ease;
   margin: 0 auto;
 }
 
@@ -195,7 +312,7 @@ img {
   top: 50%;
   left: calc(100% + 62px);
   transform: translateX(0px) translateY(-50%);
-  transition: transform .25s ease;
+  transition: transform .15s ease;
   height: 19.7px;
   width: 39px;
   background-position: center;
@@ -211,6 +328,10 @@ img {
 
 .s-main__btn {
   margin-top: 8.88vh;
+}
+
+.s-main__textarea {
+  resize: vertical;
 }
 
 .btn:hover {
@@ -231,4 +352,29 @@ img {
   letter-spacing: 0.005em;
   text-transform: uppercase;
   max-width: 720px;
+}
+
+@media screen and (max-width: 1560px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 12px;
+  }
+
+  .right-line .hamburger {
+    padding: 40px;
+  }
+
+  .right-line {
+    height: auto;
+    background-image: url(../img/bg/hamburger.png);
+  }
+
+  .s-main__socials-list {
+    right: 140px;
+  }
 }
