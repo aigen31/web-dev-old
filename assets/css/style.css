@@ -55,7 +55,7 @@ img {
 
 .s-main {
   background-position: 0 0;
-  background-size: 78% auto;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   padding-top: 9.7vh;
   padding-right: 100px;
@@ -77,15 +77,11 @@ img {
   width: auto;
   height: 100%;
   z-index: 100;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../img/bg/right-line.png);
+  background-color: #1F1F20;
 }
 
 .right-line .hamburger {
   margin: auto;
-  padding-left: 30px;
 }
 
 .right-line .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
@@ -199,7 +195,7 @@ img {
 }
 
 .menu-wrapper__item .link {
-  color: #fff;
+  color: #f8f8f8;
   white-space: nowrap;
   transition: color .15s ease;
 }
@@ -229,15 +225,16 @@ img {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   column-gap: 15px;
   position: absolute;
-  top: 35px;
-  right: 4.4vw;
+  top: 15px;
+  right: 5.4vw;
 }
 
-.s-main__socials-item {
-  width: 43px;
-  height: 43px;
+.s-main__socials-link {
+  font-size: 1.4rem;
+  color: #1F1F20;
 }
 
 .s-main__socials-img {
@@ -372,16 +369,20 @@ img {
   }
 
   .right-line .hamburger {
-    padding: 40px;
+    padding: 25px;
+  }
+
+  .right-line .hamburger .hamburger-inner, .right-line .hamburger .hamburger-inner::before, .right-line .hamburger .hamburger-inner::after {
+    background-color: #1F1F20;
   }
 
   .right-line {
     height: auto;
-    background-image: url(../img/bg/hamburger.png);
+    background-color: transparent;
   }
 
   .s-main__socials-list {
-    right: 140px;
+    right: 90px;
   }
 
   .s-main__col--left {
@@ -467,6 +468,11 @@ img {
 
   .s-main__slider .slick-list {
     margin: 0 -20px;
+  }
+
+  .s-main__socials-link {
+    font-size: 1.4rem;
+    color: #F8F8F8;
   }
 }
 
@@ -561,7 +567,7 @@ img {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
   html {
     font-size: 8px;
   }
@@ -577,5 +583,9 @@ img {
 
   .s-main__slider .slick-list {
     margin: 0 -10px;
+  }
+
+  .s-main__socials-item:first-child {
+    order: 1;
   }
 }
