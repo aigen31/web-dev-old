@@ -42,7 +42,12 @@ img {
 .container {
   max-width: 1600px;
   width: 100%;
+  padding: 0 15px;
   margin: auto;
+}
+
+.s .h2 {
+
 }
 
 .row {
@@ -85,7 +90,6 @@ img {
 }
 
 .right-line .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
-  background-color: #f8f8f8;
   border-radius: 0;
   height: 3px;
 }
@@ -129,7 +133,7 @@ img {
   transform: translateX(0%);
 }
 
-@keyframes fadeIn {
+@keyframes overlay {
   from {
     opacity: 0;
   } to {
@@ -157,7 +161,7 @@ img {
 .overlay.active {
   opacity: 0.3;
   display: block;
-  animation: fadeIn .15s ease;
+  animation: overlay .15s ease;
 }
 
 .menu-wrapper__list {
@@ -166,7 +170,7 @@ img {
   padding: 0;
 }
 
-.menu-wrapper__close-button {
+.close-button {
   width: 50px;
   height: 50px;
   background-color: transparent;
@@ -176,8 +180,8 @@ img {
   cursor: pointer;
   box-sizing: border-box;
   text-decoration: none;
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 30px;
   right: 20px;
   background-image: url(../img/exit/close.svg);
   background-position: center;
@@ -228,8 +232,9 @@ img {
   align-items: center;
   column-gap: 15px;
   position: absolute;
-  top: 15px;
+  top: 36px;
   right: 5.4vw;
+  z-index: 102;
 }
 
 .s-main__socials-link {
@@ -357,6 +362,135 @@ img {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFFFFF 76.86%);
   }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  } to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  } to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+[data-section="about"] {
+  animation: fadeOut .25s ease forwards;
+}
+
+[data-section="about"].active {
+  animation: fadeIn .25s ease forwards;
+}
+
+.s .link {
+  color: #f8f8f8;
+  text-decoration: underline;
+}
+
+.s-nav__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 0;
+  column-gap: 10px;
+}
+
+.s-nav__item .s-nav__link {
+  color: #FFBB00;
+  font-size: .9rem;
+  transition: color .15s ease;
+  text-decoration: none;
+}
+
+.s-nav__item .s-nav__link:hover, .s-nav__item.active .s-nav__link {
+  color: #F8F8F8;
+}
+
+.s-nav__item.active .s-nav__link {
+  text-decoration: underline;
+}
+
+.s {
+  color: #f8f8f8;
+  padding: 75px 0;
+  font-size: 1.25rem;
+}
+
+.s--modal {
+  position: fixed;
+  overflow: auto;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1F1F20;
+}
+
+.s h1, .s h2 {
+  text-transform: uppercase;
+}
+
+.s h1 {
+  font-size: 4.5rem;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.s h2 {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 1.75rem;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+.s p {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.s .p--mbn {
+  margin-bottom: 0;
+}
+
+.s .p--mbn + ul {
+  margin-top: 5px;
+}
+
+.s__btn {
+  margin-top: 40px;
+}
+
+.s-about__img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.s-about__col--left {
+  width: 70%;
+}
+
+.s-about__col--right {
+  width: 30%;
+}
+
+.s-about__container {
+  display: flex;
+  column-gap: 40px;
+}
+
 @media screen and (max-width: 1560px) {
   html {
     font-size: 14px;
@@ -409,6 +543,16 @@ img {
     background-image: none !important;
     background-color: #1F1F20;
   }
+
+  .s-about__col {
+    width: 100%;
+  }
+
+  .s-about__col--right {
+    display: none;
+  }
+
+  
 
   /* .s-main__slider .slick-list::before, .s-main__slider .slick-list::after {
     display: none;
@@ -568,11 +712,8 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  html {
-    font-size: 8px;
-  }
-
   .s-main__socials-list {
+    position: fixed;
     left: 20px;
     right: auto;
   }
@@ -587,5 +728,21 @@ img {
 
   .s-main__socials-item:first-child {
     order: 1;
+  }
+
+  .s {
+    padding-top: 120px;
+  }
+
+ .right-line .hamburger .hamburger-inner, .right-line .hamburger .hamburger-inner::before, .right-line .hamburger .hamburger-inner::after {
+    background-color: #f8f8f8;
+  }
+
+  .right-line .hamburger {
+    padding: 45px;
+  }
+
+  .s-main__container {
+    padding: 0;
   }
 }

@@ -33,6 +33,18 @@ $(document).ready(function() {
           arrows: false,
           centerMode: true,
         }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          vertical: false,
+          verticalSwiping: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+        }
       }
     ]
   });
@@ -65,25 +77,38 @@ $(document).ready(function() {
     $('#hamburger__main').removeClass('is-active');
     $('.overlay').removeClass('active');
   })
- 
-  $('#s-main__btn').click(function() {
-    vex.dialog.open({
-      message: 'Обратная связь',
-      input: [
-        `<input name="email" type="email" placeholder="Как к Вам обращаться?" required />
+
+  $('.btn[data-event="modal"]').each(function() {
+    $(this).click(function () {
+      vex.dialog.open({
+        message: 'Обратная связь',
+        input: [
+          `<input name="email" type="email" placeholder="Как к Вам обращаться?" required />
         <textarea class="s-main__textarea" placeholder="Сообщение" required /></textarea>`
-      ].join(''),
-      buttons: [
-        $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
-        // $.extend({}, vex.dialog.buttons.NO, { text: 'Назад' })
-      ],
-      callback: function (data) {
-        // if (!data) {
-        //   console.log('Cancelled')
-        // } else {
-        //   console.log('Username', data.username, 'Password', data.password)
-        // }
-      }
+        ].join(''),
+        buttons: [
+          $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
+          // $.extend({}, vex.dialog.buttons.NO, { text: 'Назад' })
+        ],
+        callback: function (data) {
+          // if (!data) {
+          //   console.log('Cancelled')
+          // } else {
+          //   console.log('Username', data.username, 'Password', data.password)
+          // }
+        }
+      })
     })
+  })
+
+  $('.s__close-button').click(function() {
+    $(this).closest('.s').removeClass('active');
+  })
+
+
+  $('[data-element="window"]').click(function(e) {
+    e.preventDefault();
+
+    $(`[data-section="${$(this).attr('href')}"]`).addClass('active');
   })
 })
