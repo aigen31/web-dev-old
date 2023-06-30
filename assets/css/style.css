@@ -6,6 +6,10 @@ body {
   font-family: "Roboto";
 }
 
+body.preload *{
+  animation-duration: 0s !important;
+}
+
 body * {
   box-sizing: border-box;
 }
@@ -118,6 +122,10 @@ img {
   width: 25px;
   right: 0;
 }
+
+ .right-line .hamburger .hamburger-inner, .right-line .hamburger .hamburger-inner::before, .right-line .hamburger .hamburger-inner::after {
+    background-color: #f8f8f8;
+  }
 
 .menu-wrapper {
   position: fixed;
@@ -322,7 +330,7 @@ img {
   max-width: 720px;
 }
 
-.s-main__slider-btn {
+.s-main__slider-btn, .s-reviews__slider-btn {
     background-color: transparent;
     display: block;
     position: relative;
@@ -382,17 +390,32 @@ img {
   }
 }
 
-[data-section="about"] {
+[data-section] {
   animation: fadeOut .25s ease forwards;
 }
 
-[data-section="about"].active {
+[data-section].active {
   animation: fadeIn .25s ease forwards;
 }
 
 .s .link {
   color: #f8f8f8;
   text-decoration: underline;
+}
+
+.s-nav {
+  animation: fadeOut .15s ease forwards;
+}
+.s-nav.active {
+  animation: fadeIn .15s ease forwards;
+}
+
+.s-nav__container {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 70px;
+  z-index: 102;
 }
 
 .s-nav__list {
@@ -421,7 +444,7 @@ img {
 
 .s {
   color: #f8f8f8;
-  padding: 75px 0;
+  padding: 85px 0;
   font-size: 1.25rem;
 }
 
@@ -436,18 +459,18 @@ img {
   background-color: #1F1F20;
 }
 
-.s h1, .s h2 {
+.s h2, .s h3 {
   text-transform: uppercase;
 }
 
-.s h1 {
+.s h2 {
   font-size: 4.5rem;
   margin: 0;
   margin-bottom: 15px;
   font-weight: bold;
 }
 
-.s h2 {
+.s h3 {
   margin: 0;
   margin-top: 20px;
   font-size: 1.75rem;
@@ -489,6 +512,88 @@ img {
 .s-about__container {
   display: flex;
   column-gap: 40px;
+}
+
+.s-reviews__slider {
+  max-width: 600px;
+  margin: auto;
+  font-family: serif;
+}
+
+.s-reviews__slide-author {
+  border-radius: 10rem;
+  max-width: 100px;
+}
+
+.s-reviews__slide-name {
+  opacity: 0.5;
+}
+
+.s-reviews__slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+.s-reviews__slider-btn--left {
+    left: -70px;
+  }
+
+.s-reviews__slider-btn--right {
+    right: -70px;
+  }
+
+.s-reviews__slide-quotes {
+  position: relative;
+}
+
+.s-reviews__slider::before, .s-reviews__slider::after {
+  content: '"';
+  font-family: "Catamaran";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  font-size: 15rem;
+  color: #FFBB00;
+  opacity: .5;
+  font-weight: bold;
+  line-height: 0;
+}
+
+.s-reviews__slider::before {
+  top: 170px;
+  left: 0;
+  transform: translateX(-50%);
+}
+
+.s-reviews__slider::after {
+  bottom: -40px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.s-services__table {
+  width: 100%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.s-services__btn {
+  /* display: block;
+  margin: auto; */
+  margin-top: 50px;
+}
+
+.s-services__td, .s-services__th {
+  border-bottom: 1px solid #F8F8F8;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.s-services__td:last-child {
+  text-align: right;
 }
 
 @media screen and (max-width: 1560px) {
@@ -565,18 +670,18 @@ img {
     max-width: auto;
   } */
 
-  .s-main__slider-btn {
+  .s-main__slider-btn, .s-reviews__slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
   }
 
-  .s-main__slider-btn--left {
+  .s-main__slider-btn--left, .s-reviews__slider-btn--left {
     left: 0;
   }
 
-  .s-main__slider-btn--right {
+  .s-main__slider-btn--right, .s-reviews__slider-btn--right {
     right: 0;
   }
 
@@ -709,6 +814,11 @@ img {
   .vex {
     font-size: 14px;
   }
+
+  .s-main {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -734,15 +844,19 @@ img {
     padding-top: 120px;
   }
 
- .right-line .hamburger .hamburger-inner, .right-line .hamburger .hamburger-inner::before, .right-line .hamburger .hamburger-inner::after {
-    background-color: #f8f8f8;
-  }
-
   .right-line .hamburger {
     padding: 45px;
   }
 
+   .right-line .hamburger .hamburger-inner, .right-line .hamburger .hamburger-inner::before, .right-line .hamburger .hamburger-inner::after {
+    background-color: #f8f8f8;
+  }
+
   .s-main__container {
     padding: 0;
+  }
+
+  .s-nav__container {
+    top: 105px;
   }
 }

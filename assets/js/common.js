@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  setTimeout(() => {
+    $("body").removeClass("preload");
+  }, 1500)
+  
   $('.s-main__slider').slick({
     vertical: true,
     verticalSwiping: true,
@@ -31,6 +35,7 @@ $(document).ready(function() {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
+          centerPadding: '180px',
           centerMode: true,
         }
       },
@@ -43,11 +48,19 @@ $(document).ready(function() {
           slidesToScroll: 1,
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '60px',
         }
       }
     ]
   });
+
+  $('.s-reviews__slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    prevArrow: '<button class="s-reviews__slider-btn s-reviews__slider-btn--left"><img src="assets/img/arrows/slider-left-wh.svg" alt=""/></button>',
+    nextArrow: '<button class="s-reviews__slider-btn s-reviews__slider-btn--right"><img src="assets/img/arrows/slider-right-wh.svg" alt=""/></button>',
+  })
 
   let resize = () => {
     if ($(window).width() >= 1400) {
@@ -83,8 +96,10 @@ $(document).ready(function() {
       vex.dialog.open({
         message: 'Обратная связь',
         input: [
-          `<input name="email" type="email" placeholder="Как к Вам обращаться?" required />
-        <textarea class="s-main__textarea" placeholder="Сообщение" required /></textarea>`
+          `<form action="https://formspree.io/f/mjvqbjeg" method="POST">
+            <input name="email" type="email" placeholder="Как к Вам обращаться?" required />
+            <textarea class="s-main__textarea" placeholder="Сообщение" required /></textarea>
+          </form>`
         ].join(''),
         buttons: [
           $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
@@ -103,11 +118,26 @@ $(document).ready(function() {
 
   $('.s__close-button').click(function() {
     $(this).closest('.s').removeClass('active');
+
+    $('.s-nav').removeClass('active');
+  })
+
+  $('.s-nav__item').click(function() {
+    $('.s-nav__item').not($(this)).removeClass('active');
+    $(this).addClass('active');
   })
 
 
   $('[data-element="window"]').click(function(e) {
     e.preventDefault();
+
+    $('.s-nav').addClass('active');
+
+    $('.s-nav__item').not($(`.s-nav__item .link[href=${$(this).attr('href')}]`).closest('.s-nav__item')).removeClass('active');
+
+    $(`.s-nav__item .link[href=${$(this).attr('href')}]`).closest('.s-nav__item').addClass('active');
+
+    $(`[data-section]`).not($(`[data-section="${$(this).attr('href')}"]`)).removeClass('active');
 
     $(`[data-section="${$(this).attr('href')}"]`).addClass('active');
   })

@@ -12,13 +12,17 @@
   <link rel="stylesheet" href="assets/libs/vex-master/css/vex.css">
   <link rel="stylesheet" href="assets/libs/vex-master/css/vex-theme-wireframe.css">
   <link rel="stylesheet" href="assets//css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
   <title>Evgeny Bil - Разработка сайтов</title>
 </head>
 
-<body>
+<body class="preload">
   <div class="right-line">
     <button class="hamburger hamburger--arrow" id="hamburger__main" type="button">
         <span class="hamburger-box">
@@ -34,13 +38,31 @@
 
     <nav class="menu-wrapper__nav">
       <ul class="menu-wrapper__list">
-        <li class="menu-wrapper__item"><a href="#" class="link">Портфолио</a></li>
+        <!-- <li class="menu-wrapper__item"><a href="#" class="link">Портфолио</a></li> -->
         <li class="menu-wrapper__item"><a href="#" class="link">Технологии</a></li>
-        <li class="menu-wrapper__item"><a href="#" class="link">Акции</a></li>
-        <li class="menu-wrapper__item"><a href="#" class="link">Блог/Статьи</a></li>
+        <!-- <li class="menu-wrapper__item"><a href="#" class="link">Акции</a></li> -->
+        <!-- <li class="menu-wrapper__item"><a href="#" class="link">Блог/Статьи</a></li> -->
         <li class="menu-wrapper__item"><a href="#" class="link">FAQ</a></li>
       </ul>
     </nav>
+  </div>
+
+  <div class="s-nav__container">
+    <div class="container">
+      <div class="s-nav">
+        <ul class="s-nav__list">
+          <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="about">Обо мне</a></li>
+          <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="services">Услуги</a></li>
+          <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="contacts">Контакты</a></li>
+          <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="reviews">Отзывы</a></li>
+          <!-- <li class="s-nav__item"><a class="link s-nav__link" href="#">Портфолио</a></li> -->
+          <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="tecnology">Технологии</a></li>
+          <!-- <li class="s-nav__item"><a class="link s-nav__link" href="#">Акции</a></li> -->
+          <!-- <li class="s-nav__item"><a class="link s-nav__link" href="#">Блог/статьи</a></li> -->
+          <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <div class="s-main__socials">
@@ -95,10 +117,10 @@
         </h1>
 
         <ul class="s-main__list">
+          <li class="s-main__item"><a data-element="window" href="services" class="link">Услуги</a></li>
+          <li class="s-main__item"><a data-element="window" href="reviews" class="link">Отзывы</a></li>
           <li class="s-main__item"><a data-element="window" href="about" class="link">Обо мне</a></li>
-          <li class="s-main__item"><a href="#" class="link">Контакты</a></li>
-          <li class="s-main__item"><a href="#" class="link">Отзывы</a></li>
-          <li class="s-main__item"><a href="#" class="link">Услуги</a></li>
+          <li class="s-main__item"><a data-element="window" href="contacts" class="link">Контакты</a></li>
         </ul>
 
         <div class="row">
@@ -109,11 +131,13 @@
       </div>
       <div class="s-main__col s-main__col--right">
         <div class="s-main__slider">
-          <div class="s-main__slider-item"><a href="#"><img src="assets/img/sample.jpg" alt="" class="s-main__slider-img"></a></div>
-          <div class="s-main__slider-item"><a href="#"><img src="assets/img/sample.jpg" alt="" class="s-main__slider-img"></a></div>
-          <div class="s-main__slider-item"><a href="#"><img src="assets/img/sample.jpg" alt="" class="s-main__slider-img"></a></div>
-          <div class="s-main__slider-item"><a href="#"><img src="assets/img/sample.jpg" alt="" class="s-main__slider-img"></a></div>
-          <div class="s-main__slider-item"><a href="#"><img src="assets/img/sample.jpg" alt="" class="s-main__slider-img"></a></div>
+          <div class="s-main__slider-item"><a href="#"><img src="assets/img/portfolio/thumbnails/JPEG/inko-energo.ru_.jpg" alt="" class="s-main__slider-img"></a></div>
+          <div class="s-main__slider-item"><a href="#"><img src="assets/img/portfolio/thumbnails/JPEG/bkr.spb.ru_remont-konditsionerov.jpg" alt="" class="s-main__slider-img"></a></div>
+          <div class="s-main__slider-item"><a href="#"><img src="assets/img/portfolio/thumbnails/JPEG/killustik.eu_.jpg" alt="" class="s-main__slider-img"></a></div>
+          <div class="s-main__slider-item"><a href="#"><img src="assets/img/portfolio/thumbnails/JPEG/manepa.ru_.jpg" alt="" class="s-main__slider-img"></a></div>
+          <div class="s-main__slider-item"><a href="#"><img src="assets/img/portfolio/thumbnails/JPEG/metallolom16.jpg" alt="" class="s-main__slider-img"></a></div>
+          <div class="s-main__slider-item"><a href="#"><img src="assets/img/portfolio/thumbnails/JPEG/stella-group.biz_.jpg" alt="" class="s-main__slider-img"></a></div>
+          <div class="s-main__slider-item"><a href="#"><img src="assets/img/portfolio/thumbnails/JPEG/www.lucky-wheels.ru_.jpg" alt="" class="s-main__slider-img"></a></div>
         </div>
       </div>
     </div>
@@ -123,22 +147,7 @@
     <button class="close-button s__close-button" id="s__close-button-about"></button>
 
     <div class="container">
-      <div class="s-nav">
-        <ul class="s-nav__list">
-          <li class="s-nav__item active"><a class="link s-nav__link" href="#">Обо мне</a></li>
-          <li class="s-nav__item"><a class="link s-nav__link" href="#">Услуги</a></li>
-          <li class="s-nav__item"><a class="link s-nav__link" href="#">Контакты</a></li>
-          <li class="s-nav__item"><a class="link s-nav__link" href="#">Портфолио</a></li>
-          <li class="s-nav__item"><a class="link s-nav__link" href="#">Технологии</a></li>
-          <li class="s-nav__item"><a class="link s-nav__link" href="#">Акции</a></li>
-          <li class="s-nav__item"><a class="link s-nav__link" href="#">Блог/статьи</a></li>
-          <li class="s-nav__item"><a class="link s-nav__link" href="#">FAQ</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="container">
-      <h1>Обо мне</h1>
+      <h2>Обо мне</h2>
     </div>
     <div class="container s-about__container">
       
@@ -147,7 +156,7 @@
           меня уже 3 года опыта в этой области. Моя цель - создавать красивые и функциональные веб-сайты, которые помогут Вам
           достичь своих целей в онлайн-мире.</p>
 
-        <h2>Мой стек технологий</h2>
+        <h3>Мой стек технологий</h3>
 
         <p>Он включает в себя PHP, JavaScript и jQuery для создания динамических и интерактивных функций.
           Я также работаю с библиотекой <a class="link" href="https://greensock.com/gsap/">GSAP</a>, которая помогает создавать плавные и привлекательные анимации на Вашем веб-сайте.</p>
@@ -156,11 +165,11 @@
           оптимальное отображение на разных устройствах. Я работаю с препроцессорами Sass и Less, которые обеспечивают легкость поддержки в долгосрочной перспективе. А когда дело доходит до контент-менеджмента, то я работаю с
           WordPress, чтобы создать функциональные и легко управляемые сайты. </p>
 
-        <h2>Оптимизация и эффективность</h2>
+        <h3>Оптимизация и эффективность</h3>
 
         <p>Для автоматизации задач, быстрой и гибкой разработки я использую инструменты Gulp и Docker.</p>
 
-        <h2>Другие технологии</h2>
+        <h3>Другие технологии</h3>
 
         <p>Так же владею ОС Linux, такими как Arch, Ubuntu и Debian, что позволяет мне настроить и
           оптимизировать окружение для веб-разработки.
@@ -168,7 +177,7 @@
 
         <p>Хочешь увидеть примеры моей работы? Вот <a class="link" href="#">моё портфолио</a>.</p>
 
-        <h2>Сотрудничество</h2>
+        <h3>Сотрудничество</h3>
 
         <p>Свяжись со мной сейчас, чтобы обсудить твои идеи и начать работу над твоим новым веб-проектом.</p>
         
@@ -177,6 +186,277 @@
 
       <div class="col s-about__col s-about__col--right">
         <img src="assets/img/me.jpg" alt="Это я" class="s-about__img">
+      </div>
+    </div>
+  </section>
+
+  <section class="s s-contacts s--modal" data-section="contacts">
+    <button class="close-button s__close-button" id="s__close-button-contacts"></button>
+  
+    <div class="container">
+      <h2>Контакты</h2>
+
+      <p>Номер телефона: <a href="tel" class="link">+7 (913) 052 34-06</a></p>
+      <p>Адрес электронной почты: <a href="mailto:aigen.chernogorsk@yandex.ru" class="link">aigen.chernogorsk@yandex.ru</a></p>
+      <p>Мой телеграм: <a href="https://t.me/AiGen31" class="link">@AiGen31</a></p>
+      <p>Мой ВК: <a href="https://vk.com/aigen_31" class="link">https://vk.com/aigen_31</a></p>
+    </div>
+  </section>
+
+  <section class="s s-reviews s--modal" data-section="reviews">
+    <button class="close-button s__close-button" id="s__close-button-contacts"></button>
+  
+    <div class="container">
+      <h2>Отзывы</h2>
+  
+      <div class="s-reviews__slider">
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/author1.png" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            HTML верстка сайта
+          </h2>
+          <p class="s-reviews__slide-name">
+            Сергей Якушенок
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Проект шел достаточно тяжело. Но отдать должное Евгению - не смотря ни на что, он работал, делал все качественно, и
+            всегда был на связи. А это показатель ответственности и профессионализма. За это могу смело его порекомендовать как
+            хорошего исполнителя. Надеюсь на продолжение сотрудничества.
+          </quotes>
+
+          <p><a href="https://freelance.ru/reviews/aigen/#review_328972" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Разработка сайта районной больницы
+          </h2>
+          <p class="s-reviews__slide-name">
+            Максим Панов
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Все выполнено в соответствии с ТЗ. Сроки были обговорены и работа выполнена без проблем в срок. 5/5
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_328080" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/author2.png" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Добавить ссылки в pdf файл
+          </h2>
+          <p class="s-reviews__slide-name">
+            Гульназ Галиахметова
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Большое спасибо за работу, справился с поставленной задачей, все было выполнено в срок, всегда на связи) рекомендую!
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_327951" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Очень простой сайт
+          </h2>
+          <p class="s-reviews__slide-name">
+            Yelena Kozachenko
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Очень круто! Сделал сайт как я себе представляла за пару дней. Также помог разобраться с приложением, посоветовал лучший
+            вариант хостинга и другие советы, которые мне как новичку бесценны! Спасибо
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_327587" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+        
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Поправить код на тильде
+          </h2>
+          <p class="s-reviews__slide-name">
+            Варвара Збрицкая
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Евгений быстро откликнулся на задание, так же быстро и качественно выполнил свою работу) Буду обращаться еще
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_327368" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Верстка главной страницы
+          </h2>
+          <p class="s-reviews__slide-name">
+            Антонина Дорожкина
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Евгений сработал - быстро и оперативно
+            правки внес также без проблем
+            советую обращаться :)
+            ответственный подход
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_325229" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Создать 2 раздела сайта
+          </h2>
+          <p class="s-reviews__slide-name">
+            Артем Лысенко
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Отличный исполнителей. Проект выполнен оперативно и качественно. Рекомендую!
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_322145" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+        
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            One Page перенос
+          </h2>
+          <p class="s-reviews__slide-name">
+            Dmitri Koles
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Все оперативно и качественно.
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_316027" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Переработать 2 картинки
+          </h2>
+          <p class="s-reviews__slide-name">
+            Гетера
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Работа была выполнена очень качественно и даже раньше чем было заявлено. Планирую сотрудничать на постоянной основе и
+            Вам того же рекомендую. Огромное спасибо
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_315823" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Отредактировать html письмо
+          </h2>
+          <p class="s-reviews__slide-name">
+            Владислав Иванов
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Мне подход понравился исполнителя, быстро, четко, не тормозил))
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_312764" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Верстка сайта по примеру
+          </h2>
+          <p class="s-reviews__slide-name">
+            Pavel fixxx
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Разместив задание - получил достаточное количество заявок на выполнение работы. Было большее количество заявок от
+            перекупщиков которые ломили цены, и тех кто не был сфокусирован именно в данной тематике, но когда написал Евгений -
+            стало понятно что, он один из тех кто реально сделает как надо, тем более Евгений запросил и адекватную цену за
+            выполнения работы.
+            Работа сделана как было описано мной в тех. задании и сделана в заявленный срок!
+            На Все необходимые исправления реагировал адекватно и быстро!
+            Впечатления положительные! Сразу было понятно что это тот человек который мне нужен! Советую!
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_312628" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/author3.png" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Починить вёрстку
+          </h2>
+          <p class="s-reviews__slide-name">
+            Михаил Ахметов
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Евгений - профессиональный, вежливый, разбирающийся в своём деле исполнитель. Выполнил огромное количество работы в
+            кратчайшие сроки, по крайне демократичной цене. Были исправлены просто неисправляемые ошибки в очень большом количестве.
+            Уже после получения оплаты сделал неожиданно появившуюся часть работы, жертвуя своим личным временем, хотя уже никому
+            ничего не должен был. Общение оставило только приятные эмоции. Записал контакты, обязательно буду обращаться ещё,
+            рекомендую к сотрудничеству!
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_310779" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Оптимизировать сайт, увеличить скорость загрузки
+          </h2>
+          <p class="s-reviews__slide-name">
+            Павел Нестерович
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Все отлично. Вовремя и качественно. Рекомендую!
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_309773" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+        <div class="s-reviews__slide">
+          <img src="assets/img/reviews/author4.png" alt="Сергей Якушенок" class="s-reviews__slide-author">
+          <h2>
+            Верстка сайта
+          </h2>
+          <p class="s-reviews__slide-name">
+            Сергей Матвеев
+          </p>
+          <quotes class="s-reviews__slide-quotes">
+            Огромное спасибо Евгению, за качественно выполненную работу.
+            Побольше бы таких специалистов, Рекомендую!
+          </quotes>
+          <p><a href="https://freelance.ru/reviews/aigen/#review_309054" target="_blank" class="link">Ссылка на отзыв</a></p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    
+  </section>
+
+  <section class="s s-services s--modal" data-section="services">
+    <button class="close-button s__close-button" id="s__close-button-contacts"></button>
+  
+    <div class="container">
+      <h2>Услуги</h2>
+
+      <table class="s-services__table">
+        <tr class="s-services__tr">
+          <td class="s-services__td">Landing-Page</td>
+          <td class="s-services__td">От 20000₽</td>
+        </tr>
+        <tr class="s-services__tr">
+          <td class="s-services__td">Сайт-Визитка</td>
+          <td class="s-services__td">От 17000₽</td>
+        </tr>
+        <tr class="s-services__tr">
+          <td class="s-services__td">Сайт-Блог</td>
+          <td class="s-services__td">От 30000₽</td>
+        </tr>
+        <tr class="s-services__tr">
+          <td class="s-services__td">Интернет-Магазин</td>
+          <td class="s-services__td">От 40000₽</td>
+        </tr>
+      </table>
+      <div class="row">
+        <button class="btn s-services__btn" id="s-main__btn" data-event="modal">
+          Оставить заявку
+        </button>
       </div>
     </div>
   </section>
