@@ -57,5 +57,5 @@ minima:
 # show_excerpts: false
 
 # domain: aigen31.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://aigen31.github.io/  # the base hostname and protocol for your site, e.g. http://example.com
+url: https://aigen31.github.io  # the base hostname and protocol for your site, e.g. http://example.com
 baseurl: /web-dev-portfolio      # place folder name if the site is served in a subfolder
