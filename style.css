@@ -461,7 +461,7 @@ img {
 
 .header-main {
   position: fixed;
-  z-index: 99;
+  z-index: 103;
   left: 0;
   top: 0;
   right: var(--header-margin);
@@ -1086,6 +1086,10 @@ img {
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, rgba(31, 31, 31, 0) 0%, #1F1F20 25%);
+  }
+
+  .header-main.active {
+    z-index: 103;
   }
 
   .header-main.active::before {
