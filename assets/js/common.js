@@ -140,7 +140,6 @@ $(document).ready(function() {
         callback: function (data) {
           if (!data) {
             console.log('Cancelled')
-            vex.dialog.alert('К сожалению, форма не работает. Попробуйте позже')
           } else {
             const message =
             `Заявка с evgenybil.site
