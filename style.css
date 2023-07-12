@@ -1078,7 +1078,7 @@ img {
     white-space: nowrap;
   }
 
-  header.header-main::before {
+  .header-main::before {
     content: "";
     position: fixed;
     top: 0;
@@ -1150,7 +1150,7 @@ img {
     margin: 0 10px;
   }
 
-  header.header-main::before {
+  .header-main::before {
     height: 130px;
   }
 
