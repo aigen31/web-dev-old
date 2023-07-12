@@ -98,29 +98,59 @@ $(document).ready(function() {
     $('.overlay').removeClass('active');
   })
 
+  let tg = {
+    token: "6128530085:AAGC61frZ33bvxqPujmEm5KpqZDkHGBS7c8", // Your bot's token that got from @BotFather
+    chat_id: "-1001685543363" // The user's(that you want to send a message) telegram chat id
+  }
+
+  /**
+   * By calling this function you can send message to a specific user()
+   * @param {String} the text to send
+   *
+  */
+
+  function sendMessage(text) {
+    const url = `https://api.telegram.org/bot${tg.token}/sendMessage` // The url to request
+
+    const obj = {
+      chat_id: tg.chat_id, // Telegram chat id
+      text: text // The text to send
+    };
+
+    const xht = new XMLHttpRequest();
+    xht.open("POST", url, true);
+    xht.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+    xht.send(JSON.stringify(obj));
+  }
+
   $('.btn[data-event="modal"]').each(function() {
     $(this).click(function () {
       vex.dialog.open({
         message: 'Обратная связь',
         input: [
-          `<form action="https://formspree.io/f/mjvqbjeg" method="POST">
-            <input name="name" type="text" placeholder="Как к Вам обращаться?" required />
-            <input name="tel" type="tel" placeholder="Номер телефона" required />
-            <input name="email" type="email" placeholder="E-mail" />
-            <textarea class="s-main__textarea" name="message" placeholder="Сообщение" required /></textarea>
-            <button class="btn s-main__modal-btn" type="submit">Отправить</button>
-          </form>`
+          `<input name="name" type="text" placeholder="Как к Вам обращаться?" required />
+          <input name="tel" type="tel" placeholder="Номер телефона" required />
+          <input name="email" type="email" placeholder="E-mail" />
+          <textarea class="s-main__textarea" name="message" placeholder="Сообщение" required /></textarea>`
         ].join(''),
         buttons: [
-          // $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
+          $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
           // $.extend({}, vex.dialog.buttons.NO, { text: 'Назад' })
         ],
         callback: function (data) {
-          // if (!data) {
-          //   console.log('Cancelled')
-          // } else {
-          //   console.log('Username', data.username, 'Password', data.password)
-          // }
+          if (!data) {
+            console.log('Cancelled')
+          } else {
+            const message =
+            `Заявка с evgenybil.site
+
+Имя клиента: ${data.name}
+Номер телефона ${data.tel}
+Почта: ${data.email}
+Сообщение: ${data.message}`
+
+            sendMessage(message);
+          }
         }
       })
     })

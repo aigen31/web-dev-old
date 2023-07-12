@@ -905,6 +905,19 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .s-nav__item .s-nav__link {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .s-nav__list {
+    column-gap: 5px;
+  }
+
+  .s {
+    font-size: 16px;
+  }
+
   .s-main__slider .slick-list::before {
     display: none;
   }
