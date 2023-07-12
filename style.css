@@ -1150,10 +1150,6 @@ img {
     margin: 0 10px;
   }
 
-  .header-main::before {
-    height: 130px;
-  }
-
   .s--modal.active::before {
     height: 120px;
   }
