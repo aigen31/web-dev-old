@@ -69,15 +69,25 @@ img {
 }
 
 .s-main {
-  background-position: 0 0;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
   padding-top: 9.7vh;
   padding-right: 100px;
   min-height: 100vh;
   padding-left: 20px;
   padding-right: 20px;
   color: #F8F8F8;
+}
+
+.s-main__background {
+  background-image: url(assets/img/bg/bg-main.svg);
+  background-position: 0 0;
+  background-size: auto 100%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .s-main__container {
@@ -231,12 +241,18 @@ img {
   fill: #fff;
 }
 
+.s-main__col {
+  position: relative;
+}
+
 .s-main__col--left {
   width: 75%;
+  z-index: 10;
 }
 
 .s-main__col--right {
   width: 25%;
+  z-index: 9;
 }
 
 .s-main__socials-list {
@@ -321,7 +337,7 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../img/arrows/arr-white.svg);
+  background-image: url(assets/img/arrows/arr-white.svg);
 }
 
 .s-main__item .link:hover::after {
@@ -375,6 +391,7 @@ img {
     content: "";
     position: absolute;
     display: block;
+    pointer-events: none;
     z-index: 10;
     top: 0;
     z-index: 1;
@@ -388,6 +405,7 @@ img {
     content: "";
     position: absolute;
     display: block;
+    pointer-events: none;
     z-index: 10;
     bottom: 0;
     z-index: 1;

@@ -98,11 +98,12 @@ $(document).ready(function() {
         input: [
           `<form action="https://formspree.io/f/mjvqbjeg" method="POST">
             <input name="email" type="email" placeholder="Как к Вам обращаться?" required />
-            <textarea class="s-main__textarea" placeholder="Сообщение" required /></textarea>
+            <textarea class="s-main__textarea" name="message" placeholder="Сообщение" required /></textarea>
+            <button class="btn s-main__modal-btn" type="submit">Отправить</button>
           </form>`
         ].join(''),
         buttons: [
-          $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
+          // $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
           // $.extend({}, vex.dialog.buttons.NO, { text: 'Назад' })
         ],
         callback: function (data) {
