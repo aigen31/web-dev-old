@@ -461,7 +461,7 @@ img {
 
 .header-main {
   position: fixed;
-  z-index: 103;
+  z-index: 99;
   left: 0;
   top: 0;
   right: var(--header-margin);
