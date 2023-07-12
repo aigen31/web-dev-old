@@ -198,7 +198,7 @@ img {
   top: 30px;
   right: 20px;
   z-index: 104;
-  background-image: url(../img/exit/close.svg);
+  background-image: url(assets/img/exit/close.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
