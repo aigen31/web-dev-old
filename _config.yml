@@ -1,13 +1,27 @@
 logo_url: /assets/img/logo.svg
+
+# SEO options
+url: https://evgenybil.site  # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /portfolio      # place folder name if the site is served in a subfolder
 author:
   name: AiGen31
   email: aigen.chernogorsk@yandex.ru
   phone: "+79130523406"
+favicon: /favicon.svg
+title: EVGENY BIL - разработка сайтов
+tagline: Разработка сайтов, продвижение в поиске и запуск рекламы в Хакасии
+logo: /assets/img/logo.svg
+social:
+  name: Евгений Биль
+  links:
+    - https://github.com/AiGen31
+    - https://t.me/AiGen31
+locale: ru_RU
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  EVGENY BIL©, все права защищены
+  Разработка сайтов, продвижение в поиске и запуск рекламы в Хакасии
 
 # Build settings
 
@@ -36,15 +50,14 @@ minima:
     # - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
     - { platform: github,         user_url: "https://github.com/aigen31" }
     # - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
-    - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
+    # - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
     # - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
     # - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
     # - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
     # - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
-    - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
     - { platform: telegram,       user_url: "https://t.me/AiGen31" }
     # - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
-    - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
+    # - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
 # If you want to link only specific pages in your header, uncomment this and add the path to the pages in
 # order as they should show up.
@@ -55,7 +68,3 @@ minima:
 # Set to `true` to show excerpts on the homepage.
 #
 # show_excerpts: false
-
-# domain: aigen31.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://evgenybil.site  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /portfolio      # place folder name if the site is served in a subfolder
