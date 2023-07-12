@@ -40,10 +40,10 @@
     <nav class="menu-wrapper__nav">
       <ul class="menu-wrapper__list">
         <!-- <li class="menu-wrapper__item"><a href="#" class="link">Портфолио</a></li> -->
-        <li class="menu-wrapper__item"><a href="#" class="link">Технологии</a></li>
+        <li class="menu-wrapper__item"><a data-element="window" href="tech" class="link">Технологии</a></li>
         <!-- <li class="menu-wrapper__item"><a href="#" class="link">Акции</a></li> -->
         <!-- <li class="menu-wrapper__item"><a href="#" class="link">Блог/Статьи</a></li> -->
-        <li class="menu-wrapper__item"><a href="#" class="link">FAQ</a></li>
+        <li class="menu-wrapper__item"><a data-element="window" href="faq" class="link">FAQ</a></li>
       </ul>
     </nav>
   </div>
@@ -58,7 +58,7 @@
           <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="contacts">Контакты</a></li>
           <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="reviews">Отзывы</a></li>
           <!-- <li class="s-nav__item"><a class="link s-nav__link" href="#">Портфолио</a></li> -->
-          <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="tecnology">Технологии</a></li>
+          <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="tech">Технологии</a></li>
           <!-- <li class="s-nav__item"><a class="link s-nav__link" href="#">Акции</a></li> -->
           <!-- <li class="s-nav__item"><a class="link s-nav__link" href="#">Блог/статьи</a></li> -->
           <li class="s-nav__item"><a class="link s-nav__link" data-element="window" href="faq">FAQ</a></li>
@@ -179,7 +179,7 @@
           оптимизировать окружение для веб-разработки.
           Я постоянно стремлюсь изучать новые технологии и применять их в моей работе. Это помогает мне оставаться впереди и предлагать самые современные решения для Вас.</p>
 
-        <p>Хочешь увидеть примеры моей работы? Вот <a class="link" href="#">моё портфолио</a>.</p>
+        <p>Хочешь увидеть примеры моей работы? Вот <a class="link" href="portfolio/">моё портфолио</a>.</p>
 
         <h3>Сотрудничество</h3>
 
@@ -204,6 +204,8 @@
       <p>Адрес электронной почты: <a href="mailto:aigen.chernogorsk@yandex.ru" class="link">aigen.chernogorsk@yandex.ru</a></p>
       <p>Мой телеграм: <a href="https://t.me/AiGen31" class="link">@AiGen31</a></p>
       <p>Мой ВК: <a href="https://vk.com/aigen_31" class="link">https://vk.com/aigen_31</a></p>
+
+      <button class="btn s__btn" data-event="modal">Отправить заявку</button>
     </div>
   </section>
 
@@ -216,9 +218,9 @@
       <div class="s-reviews__slider">
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/author1.png" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             HTML верстка сайта
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Сергей Якушенок
           </p>
@@ -233,9 +235,9 @@
 
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Разработка сайта районной больницы
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Максим Панов
           </p>
@@ -247,9 +249,9 @@
 
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/author2.png" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Добавить ссылки в pdf файл
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Гульназ Галиахметова
           </p>
@@ -261,9 +263,9 @@
 
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Очень простой сайт
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Yelena Kozachenko
           </p>
@@ -276,9 +278,9 @@
         
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Поправить код на тильде
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Варвара Збрицкая
           </p>
@@ -290,9 +292,9 @@
 
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Верстка главной страницы
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Антонина Дорожкина
           </p>
@@ -307,9 +309,9 @@
 
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Создать 2 раздела сайта
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Артем Лысенко
           </p>
@@ -321,9 +323,9 @@
         
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             One Page перенос
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Dmitri Koles
           </p>
@@ -335,9 +337,9 @@
 
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Переработать 2 картинки
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Гетера
           </p>
@@ -350,9 +352,9 @@
 
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Отредактировать html письмо
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Владислав Иванов
           </p>
@@ -364,9 +366,9 @@
 
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Верстка сайта по примеру
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Pavel fixxx
           </p>
@@ -384,9 +386,9 @@
 
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/author3.png" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Починить вёрстку
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Михаил Ахметов
           </p>
@@ -401,9 +403,9 @@
         </div>
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/without_avatar.svg" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Оптимизировать сайт, увеличить скорость загрузки
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Павел Нестерович
           </p>
@@ -414,9 +416,9 @@
         </div>
         <div class="s-reviews__slide">
           <img src="assets/img/reviews/author4.png" alt="Сергей Якушенок" class="s-reviews__slide-author">
-          <h2>
+          <h3>
             Верстка сайта
-          </h2>
+          </h3>
           <p class="s-reviews__slide-name">
             Сергей Матвеев
           </p>
@@ -442,25 +444,190 @@
       <table class="s-services__table">
         <tr class="s-services__tr">
           <td class="s-services__td">Landing-Page</td>
-          <td class="s-services__td">От 20000₽</td>
+          <td class="s-services__td">От 35000₽</td>
         </tr>
         <tr class="s-services__tr">
           <td class="s-services__td">Сайт-Визитка</td>
-          <td class="s-services__td">От 17000₽</td>
-        </tr>
-        <tr class="s-services__tr">
-          <td class="s-services__td">Сайт-Блог</td>
           <td class="s-services__td">От 30000₽</td>
         </tr>
         <tr class="s-services__tr">
+          <td class="s-services__td">Сайт-Блог</td>
+          <td class="s-services__td">От 50000₽</td>
+        </tr>
+        <tr class="s-services__tr">
           <td class="s-services__td">Интернет-Магазин</td>
-          <td class="s-services__td">От 40000₽</td>
+          <td class="s-services__td">От 70000₽</td>
+        </tr>
+        <tr class="s-services__tr">
+          <td class="s-services__td">Обслуживание и администрирование сайта</td>
+          <td class="s-services__td">Почасовая оплата, 700₽/час</td>
         </tr>
       </table>
       <div class="row">
         <button class="btn s-services__btn" id="s-main__btn" data-event="modal">
           Оставить заявку
         </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="s s-tech s--modal" data-section="tech">
+    <button class="close-button s__close-button" id="s__close-button-tech"></button>
+  
+    <div class="container">
+      <h2>Стек технологий</h2>
+    </div>
+    <div class="container s-tech__container">
+  
+      <div class="col s-tech__col">
+        <h3>Front-end:</h3>
+        <ul>
+          <li>HTML: Язык разметки, используемый для создания структуры веб-страниц.</li>
+          <li>CSS: Язык стилей, позволяющий задавать внешний вид элементов веб-страницы.</li>
+          <li>JavaScript: Язык программирования, который обеспечивает интерактивность и динамическое поведение на веб-страницах.</li>
+        </ul>
+
+        <h3>Back-end:</h3>
+        <ul>
+          <li>PHP: Серверный язык программирования, который широко используется для создания динамических веб-страниц и
+          взаимодействия с базами данных.</li>
+          <li>WordPress: Популярная система управления контентом (CMS) на основе PHP, которая позволяет создавать и управлять
+          сайтами с использованием различных тем и плагинов.</li>
+          <li>Платформа электронной коммерции, написанная на PHP, предназначенная для создания онлайн-магазинов.</li>
+          <li>Jekyll: Статический генератор сайтов, позволяющий создавать сайты на основе шаблонов без необходимости использования
+          базы данных или серверного языка.</li>
+        </ul>
+        
+
+        <h3>Инструменты и системы:</h3>
+        <ul>
+          <li>XAMPP: Кроссплатформенный пакет программного обеспечения, который включает в себя Apache, MySQL, PHP и другие
+          инструменты, необходимые для разработки и тестирования веб-приложений на локальном компьютере.</li>
+          <li>Docker: Платформа для контейнеризации приложений, которая позволяет упаковывать и запускать приложения со всеми их
+          зависимостями в изолированной среде.</li>
+          <li>Git: Распределенная система контроля версий, используемая для отслеживания изменений в коде и совместной работы над
+          проектами.</li>
+          <li>GitHub: Веб-платформа для хостинга и совместной работы над Git-репозиториями, позволяющая управлять версиями кода и
+          взаимодействовать с другими разработчиками.</li>
+        </ul>
+        
+        <p>Этот стек технологий предоставляет широкие возможности для разработки и управления сайтами, начиная от создания внешнего
+        вида и взаимодействия с пользователем до обработки данных и управления контентом.</p>
+  
+        <button class="btn s__btn" data-event="modal">Отправить заявку</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="s s-faq s--modal" data-section="faq">
+    <button class="close-button s__close-button" id="s__close-button-faq"></button>
+  
+    <div class="container">
+      <h2>Вопрос-ответ</h2>
+    </div>
+    <div class="container s-faq__container">
+  
+      <div class="col s-faq__col">
+        <ul class="s-faq__accordion-list">
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Каковы основные этапы разработки сайта?</h3>
+            <div class="s-faq__accordion-answer">
+              <p>Все этапы идут по порядку, согласно списку:</p>
+
+              <ol>
+                <li>
+                  Заполнение брифа по разработке дизайна
+                </li>
+                <li>
+                  Разработка макета дизайна в Figma, утверждение
+                </li>
+                <li>
+                  Вёрстка страниц согласно макету, разработка функций на JavaScript
+                </li>
+                <li>
+                  Интеграция страниц на систему управления контентом (CMS) Wordpress, OpenCart. Так же есть возможность интеграции блога в генератор статичных страниц Jekyll для более быстрой загрузки страниц
+                </li>
+                <li>
+                  Заполнение сайта контентом (текст, изображения)
+                </li>
+                <li>
+                  Подключение SEO инструментов от Google и Яндекс, настройка индексации
+                </li>
+                <li>
+                  SEO продвижение
+                </li>
+                <li>
+                  Запуск рекламы
+                </li>
+              </ol>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Какой бюджет нужен для создания сайта?</h3>
+            <div class="s-faq__accordion-answer">
+              <p>С ценами вы можете ознакомиться в разделе "<a data-element="window" href="services" class="link">Услуги</a>". Там указана минимальная цена за проект</p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Как долго занимает разработка сайта?</h3>
+            <div class="s-faq__accordion-answer">
+              <p>Учитывая все этапы - от месяца и более. Зависит от сложности сайта</p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Какие информационные материалы и данные нужны для начала работы?</h3>
+            <div class="s-faq__accordion-answer">
+              <ol>
+                <li>Заполненный бриф на разработку дизайна</li>
+                <li>Техническое задание (ТЗ)</li>
+                <li>Изображения, которые будут публиковаться на сайте</li>
+              </ol>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Какими технологиями и языками программирования вы пользуетесь при создании сайтов?</h3>
+            <div class="s-faq__accordion-answer">
+              <p>С используемыми технологиями вы можете ознакомиться в разделе "<a data-element="window" href="tech" class="link">Технологии</a>"</p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Предоставляете ли вы услуги дизайна и создания логотипа для сайта?</h3>
+            <div class="s-faq__accordion-answer">
+              <p>Да, мы делаем сайты "под ключ", то есть после разработки вы получаете полностью рабочий продукт</p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Можете ли вы помочь с оптимизацией сайта для поисковых систем (SEO)?</h3>
+            <div class="s-faq__accordion-answer">
+              <p>Да, это входит в наш список <a data-element="window" href="services" class="link">услуг</a></p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Предоставляете ли вы услуги поддержки и обновления сайта после его запуска?</h3>
+            <div class="s-faq__accordion-answer">
+              <p>Да, у нас имеется отдельная услуга администрирования и поддержки сайта в разделе "<a data-element="window" href="services" class="link">Услуги</a>"</p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Каким образом осуществляется оплата за разработку сайта?</h3>
+            <div class="s-faq__accordion-answer">
+              <p>Оплата совершается по реквизитам счёта</p>
+            </div>
+          </li>
+          <li class="accordion-item">
+            <h3 class="s-faq__accordion-title">Какие гарантии вы предоставляете на свою работу?</h3>
+            <div class="s-faq__accordion-answer">
+              <ul>
+                <li>Работа по договору самозанятого и заказчика</li>
+                <li>Почасовой отсчёт работы в конце рабочего дня</li>
+                <li>Положительные <a data-element="window" href="reviews" class="link">отзывы</a>, которые оставили клиенты на <a href="https://freelance.ru/reviews/aigen/" class="link">freelance.ru</a></li>
+                <li>Настоящие <a href="portfolio/" class="link">примеры работ</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+  
+        <button class="btn s__btn" data-event="modal">Отправить заявку</button>
       </div>
     </div>
   </section>

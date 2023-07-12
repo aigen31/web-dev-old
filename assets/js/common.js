@@ -16,6 +16,13 @@ $(document).ready(function() {
     nextArrow: '<button class="s-main__slider-btn s-main__slider-btn--right"><img src="assets/img/arrows/slider-down.svg" alt=""/></button>',
     responsive: [
       {
+        breakpoint: 1400,
+        settings: {
+          prevArrow: '<button class="s-main__slider-btn s-main__slider-btn--left"><img src="assets/img/arrows/slider-up-wh.svg" alt=""/></button>',
+          nextArrow: '<button class="s-main__slider-btn s-main__slider-btn--right"><img src="assets/img/arrows/slider-down-wh.svg" alt=""/></button>',
+        }
+      },
+      {
         breakpoint: 992,
         settings: {
           vertical: false,
@@ -97,7 +104,9 @@ $(document).ready(function() {
         message: 'Обратная связь',
         input: [
           `<form action="https://formspree.io/f/mjvqbjeg" method="POST">
-            <input name="email" type="email" placeholder="Как к Вам обращаться?" required />
+            <input name="name" type="text" placeholder="Как к Вам обращаться?" required />
+            <input name="tel" type="tel" placeholder="Номер телефона" required />
+            <input name="email" type="email" placeholder="E-mail" />
             <textarea class="s-main__textarea" name="message" placeholder="Сообщение" required /></textarea>
             <button class="btn s-main__modal-btn" type="submit">Отправить</button>
           </form>`
@@ -121,6 +130,20 @@ $(document).ready(function() {
     $(this).closest('.s').removeClass('active');
 
     $('.s-nav').removeClass('active');
+
+    $('html').removeClass('hidden');
+  })
+
+  $('.accordion-item').each(function() {
+    $(this).click(function() {
+      if ($(this).hasClass('active')) {
+        $(this).children('.s-faq__accordion-answer').slideUp(300);
+        $(this).removeClass('active')
+      } else {
+        $(this).children('.s-faq__accordion-answer').slideDown(300);
+        $(this).addClass('active')
+      }
+    })
   })
 
   $('.s-nav__item').click(function() {
@@ -133,6 +156,12 @@ $(document).ready(function() {
     e.preventDefault();
 
     $('.s-nav').addClass('active');
+
+    $('html').addClass('hidden');
+
+    $('.menu-wrapper').removeClass('active');
+    $('#hamburger__main').removeClass('is-active');
+    $('.overlay').removeClass('active');
 
     $('.s-nav__item').not($(`.s-nav__item .link[href=${$(this).attr('href')}]`).closest('.s-nav__item')).removeClass('active');
 
