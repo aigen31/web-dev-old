@@ -461,12 +461,16 @@ img {
 
 .header-main {
   position: fixed;
-  z-index: 103;
+  z-index: 99;
   left: 0;
   top: 0;
   right: var(--header-margin);
   padding-top: 35px;
   padding-bottom: 10px;
+}
+
+.header-main.active {
+  z-index: 103;
 }
 
 .header-main__container {
@@ -1086,10 +1090,6 @@ img {
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, rgba(31, 31, 31, 0) 0%, #1F1F20 25%);
-  }
-
-  .header-main.active {
-    z-index: 103;
   }
 
   .header-main.active::before {
