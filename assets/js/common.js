@@ -6,6 +6,7 @@ $(document).ready(function() {
   $('.s-main__slider').slick({
     vertical: true,
     verticalSwiping: true,
+    lazyLoad: 'ondemand',
     slidesToShow: 3,
     slidesToScroll: 3,
     centerMode: true,
