@@ -164,6 +164,8 @@ $(document).ready(function() {
     $('.s-nav').removeClass('active');
 
     $('html').removeClass('hidden');
+
+    $('.header-main').removeClass('active');
   })
 
   $('.accordion-item').each(function() {
@@ -190,6 +192,8 @@ $(document).ready(function() {
     $('.s-nav').addClass('active');
 
     $('html').addClass('hidden');
+
+    $('.header-main').addClass('active');
 
     $('.menu-wrapper').removeClass('active');
     $('#hamburger__main').removeClass('is-active');
