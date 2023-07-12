@@ -1078,6 +1078,20 @@ img {
     white-space: nowrap;
   }
 
+  header.header-main::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(31, 31, 31, 0) 0%, #1F1F20 25%);
+  }
+
+  .header-main.active::before {
+    display: none;
+  }
+
   .s-nav__list {
     column-gap: 5px;
   }
@@ -1134,6 +1148,10 @@ img {
 @media screen and (max-width: 576px) {
   .s-main__slider-item {
     margin: 0 10px;
+  }
+
+  header.header-main::before {
+    height: 130px;
   }
 
   .s--modal.active::before {
