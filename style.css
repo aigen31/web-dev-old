@@ -1136,8 +1136,9 @@ img {
 }
 
 @media screen and (max-width: 576px) {
-  .s-faq__accordion-title {
+  h3.s-faq__accordion-title {
     --arrow-width: 20px;
+    font-size: 1.5em;
   }
 
   .right-line .hamburger {
@@ -1149,7 +1150,7 @@ img {
   }
 
   .s--modal {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .s-faq__accordion-answer {
