@@ -1,3 +1,6 @@
 [submodule "portfolio"]
 	path = portfolio
 	url = https://github.com/aigen31/web-dev-portfolio.git
+[submodule "env"]
+	path = env
+	url = https://github.com/aigen31/web-dev-env.git
