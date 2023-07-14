@@ -169,7 +169,7 @@ $(document).ready(function() {
     })
   })
 
-  $('.header-main').attr('style', '--header-height: ' + Math.ceil($('.header-main').outerHeight()) + 'px;');
+  $('body').attr('style', '--header-height: ' + Math.ceil($('.header-main').outerHeight()) + 'px;');
 
   $('.accordion-item').each(function() {
     $(this).click(function() {
