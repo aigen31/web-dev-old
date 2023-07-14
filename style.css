@@ -833,6 +833,27 @@ img {
   overflow-x: auto;
 }
 
+.s-faq__accordion-title {
+  --arrow-width: 40px;
+  position: relative;
+  padding-right: calc(var(--arrow-width) + 5px);
+}
+
+.s-faq__accordion-title::after {
+  content: "";
+  width: var(--arrow-width);
+  height: var(--arrow-width);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(assets/img/arrows/slider-right-wh.svg);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  transition: transform .3s ease;
+}
+
 .s-faq__accordion-list {
   list-style-type: none;
   margin: 0;
@@ -844,6 +865,10 @@ img {
   border-bottom: 1px solid rgba(255, 255, 255, 30%);
   padding: 0 .5em .7em;
   margin-bottom: 1.5em;
+}
+
+.accordion-item.active .s-faq__accordion-title::after {
+  transform: translateY(-50%) rotate(90deg);
 }
 
 .s-faq__list {
@@ -1109,8 +1134,20 @@ img {
 }
 
 @media screen and (max-width: 576px) {
+  .s-faq__accordion-title {
+    --arrow-width: 20px;
+  }
+
   .header-main::before {
     display: block;
+  }
+
+  .s--modal {
+    font-size: 9px;
+  }
+
+  .s-faq__accordion-answer {
+    font-size: 12px;
   }
 
   .s-services__table {
