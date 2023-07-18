@@ -583,6 +583,14 @@ img {
     margin: 0 auto;
   }
 
+.s-main__slider-btn--left {
+  left: 0;
+}
+
+.s-main__slider-btn--right {
+  right: 0;
+}
+
 .s-main__slider .slick-list::before {
     content: "";
     position: absolute;
@@ -992,6 +1000,10 @@ img {
 
   body {
     background-color: #1F1F20;
+  }
+
+  .beget-link {
+    font-size: 1.2em;
   }
 
   .s-about__col {
