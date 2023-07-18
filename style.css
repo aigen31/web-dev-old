@@ -238,6 +238,15 @@ img {
   display: none;
 }
 
+.beget-link {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  font-size: 1em;
+  color: #1F1F20;
+}
+
 .s-main {
   padding-top: 9.7vh;
   padding-right: 100px;
@@ -245,6 +254,7 @@ img {
   padding-left: 20px;
   padding-right: 20px;
   color: #F8F8F8;
+  position: relative;
 }
 
 .s-main__background {
@@ -905,6 +915,10 @@ img {
 @media screen and (max-width: 1400px) {
   :root {
     --header-margin: 80px;
+  }
+
+  .beget-link {
+    color: #f8f8f8;
   }
 
   .s-nav {
