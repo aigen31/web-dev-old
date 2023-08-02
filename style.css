@@ -1,4 +1,76 @@
 @font-face {
+	font-family: 'Catamaran';
+	src: url('Catamaran-ExtraBold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Catamaran';
+	src: url('Catamaran-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Catamaran';
+	src: url('Catamaran-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Catamaran';
+	src: url('Catamaran-Bold.woff2') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Catamaran';
+	src: url('Catamaran-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Catamaran';
+	src: url('Catamaran-ExtraLight.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Catamaran';
+	src: url('Catamaran-Thin.woff2') format('woff2');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Catamaran';
+	src: url('Catamaran-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Catamaran';
+	src: url('Catamaran-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
 	font-family: 'SF Pro Text';
 	src: url('assets/fonts/SFProText-MediumItalic.woff2') format('woff2');
 	font-weight: 500;
@@ -117,7 +189,9 @@ body.preload *{
   animation-duration: 0s !important;
 }
 
-
+[itemprop="priceCurrency"] {
+	display: none;
+}
 
 body * {
   box-sizing: border-box;
@@ -212,7 +286,7 @@ img {
   right: 0;
   width: auto;
   height: 100%;
-  z-index: 104;
+  z-index: 151;
   background-color: #1F1F20;
 }
 
@@ -730,6 +804,7 @@ img {
 
 .s-reviews__slide-quotes {
   position: relative;
+	font-size: 1.25em;
 }
 
 .s-reviews__slider::before, .s-reviews__slider::after {
@@ -776,8 +851,11 @@ img {
 
 .s-services__td:last-child {
   text-align: right;
-  color: #FFBB00;
   white-space: nowrap;
+}
+
+.s-services__td span {
+	color: #FFBB00;
 }
 
 .s--modal {
@@ -835,6 +913,12 @@ img {
 
 .s-contacts p {
   text-align: left;
+}
+
+@media screen and (min-width: 1600px) {
+	.menu-wrapper {
+		padding-right: 70px;
+	}
 }
 
 @media screen and (max-width: 1600px) {

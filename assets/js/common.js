@@ -95,7 +95,7 @@ $(document).ready(function() {
     $('#hamburger__main').click(function () {
       $('.menu-wrapper').toggleClass('active');
       $('.overlay').toggleClass('active');
-      $('#hamburger__main').addClass('is-active');
+      $('#hamburger__main').toggleClass('is-active');
     })
   }
 
