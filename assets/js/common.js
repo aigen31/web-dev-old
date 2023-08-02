@@ -134,7 +134,7 @@ $(document).ready(function() {
     xht.send(JSON.stringify(obj));
   }
 
-  $('.btn[data-event="modal"]').each(function() {
+  $('[data-event="modal"]').each(function() {
     $(this).click(function () {
       vex.dialog.open({
         message: 'Обратная связь',
