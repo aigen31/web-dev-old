@@ -92,7 +92,7 @@ $(document).ready(function() {
   $(window).resize(resize)
 
   function hamburgerEvent() {
-    $('#hamburger__main').click(function () {
+    $('#hamburger__main, .overlay').click(function () {
       $('.menu-wrapper').toggleClass('active');
       $('.overlay').toggleClass('active');
       $('#hamburger__main').toggleClass('is-active');
