@@ -139,10 +139,14 @@ $(document).ready(function() {
       vex.dialog.open({
         message: 'Обратная связь',
         input: [
-          `<input name="name" type="text" placeholder="Как к Вам обращаться?" required />
-          <input name="tel" type="tel" placeholder="Номер телефона" required />
-          <input name="email" type="email" placeholder="E-mail" />
-          <textarea class="s-main__textarea" name="message" placeholder="Сообщение" required /></textarea>`
+          `<input name="name" type="text" placeholder="Как к Вам обращаться?" maxlength="30" required />
+          <input name="tel" id="input-tel-modal" type="tel" placeholder="Номер телефона" required />
+          <input name="email" type="email" placeholder="E-mail" maxlength="55" />
+          <textarea class="s-main__textarea" name="message" placeholder="Сообщение" maxlength="55" required /></textarea>
+					<label for="checkbox">
+					<input type="checkbox" id="checkbox" required>
+					Я соглашаюсь на обработку персональных данных
+					</label>`
         ].join(''),
         buttons: [
           $.extend({}, vex.dialog.buttons.YES, { text: 'Отправить' }),
@@ -166,6 +170,8 @@ $(document).ready(function() {
           }
         }
       })
+
+			$('#input-tel-modal').inputmask({"mask": "+7 (999) 999-9999"});
     })
   })
 

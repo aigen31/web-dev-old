@@ -51,17 +51,36 @@
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#1f1f20">
 	<meta name="theme-color" content="#1f1f20">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="assets/libs/normalize.css/normalize.css">
-	<link rel="stylesheet" href="assets/libs/hamburgers-master/hamburgers.css">
-	<link rel="stylesheet" href="assets/libs/slick-1.8.1/slick.css">
-	<link rel="stylesheet" href="assets/libs/vex-master/css/vex.css">
-	<link rel="stylesheet" href="assets/libs/vex-master/css/vex-theme-wireframe.css">
-	<link rel="stylesheet" href="style.css">
+	<meta property="og:title" content="EVGENY BIL WEB - разработка сайтов">
+	<meta property="og:description" content="Разработка, обслуживание и продвижение сайтов в Республике Хакасия и Красноярском крае">
+	<meta property="og:image" content="https://evgenybil.site/img/opengraph/opengraph.jpg">
+	<meta property="og:url" content="https://evgenybil.site">
+	<link rel="stylesheet" href="fonts.css">
+	<style>
+		.preloader {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: #1f1f20;
+		}
+		.preloader__text {
+			font-family: "SF", Arial, Helvetica, sans-serif;
+			font-size: 100px;
+			font-weight: 900;
+			color: #ffffff;
+		}
+	</style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="preload">
+	<div class="preloader">
+	</div>
+
 	<div class="right-line">
 		<button class="hamburger hamburger--arrow" id="hamburger__main" type="button">
 			<span class="hamburger-box">
@@ -81,7 +100,9 @@
 				<li class="menu-wrapper__item"><a data-element="window" href="tech" class="link">Технологии</a></li>
 				<li class="menu-wrapper__item"><a data-element="window" href="faq" class="link">FAQ</a></li>
 				<li class="menu-wrapper__item"><a data-element="window" data-element="window" href="about" class="link">Обо
-						мне</a></li>
+					мне</a></li>
+				<li class="menu-wrapper__item"><a data-element="window" href="brif" class="link">Бриф</a></li>
+				<li class="menu-wrapper__item"><a data-element="window" href="personal" class="link">Персональные<br> данные</a></li>
 			</ul>
 		</div>
 	</div>
@@ -113,7 +134,7 @@
 			<div class="s-main__socials">
 				<ul class="s-main__socials-list">
 					<li class="s-main__socials-item">
-						<a href="tel:+79130523406" class="s-main__socials-link" target="_blank">
+						<a href="tel:+79130523406" class="s-main__socials-link" target="_blank" rel="noopener">
 							<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg"
 								class="social-icon">
 								<path class="social__path"
@@ -126,7 +147,7 @@
 						</a>
 					</li>
 					<li class="s-main__socials-item">
-						<a href="https://t.me/AiGen31" class="s-main__socials-link" target="_blank">
+						<a href="https://t.me/AiGen31" class="s-main__socials-link" target="_blank" rel="noopener">
 							<svg width="43" height="43" viewBox="0 0 43 43" fill="none" class="social-icon"
 								xmlns="http://www.w3.org/2000/svg">
 								<path class="social__path"
@@ -139,7 +160,7 @@
 						</a>
 					</li>
 					<li class="s-main__socials-item">
-						<a href="https://vk.com/aigen_31" class="s-main__socials-link" target="_blank">
+						<a href="https://vk.com/aigen_31" class="s-main__socials-link" target="_blank" rel="noopener">
 							<svg width="43" height="43" viewBox="0 0 43 43" fill="none" class="social-icon"
 								xmlns="http://www.w3.org/2000/svg">
 								<path class="social__path"
@@ -204,7 +225,7 @@
 			</div>
 		</div>
 
-		<a href="https://beget.com/p1627316/" class="beget-link" target="_blank">Сайты работают на beget.com</a>
+		<a href="https://beget.com/p1627316/" class="beget-link" target="_blank" rel="noopener">Сайты работают на beget.com</a>
 	</section>
 
 	<section class="s s-about s--modal" data-section="about" itemscope itemtype="https://schema.org/Person">
@@ -293,7 +314,7 @@
 						хорошего исполнителя. Надеюсь на продолжение сотрудничества.
 					</quotes>
 
-					<p><a href="https://freelance.ru/reviews/aigen/#review_328972" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_328972" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -309,7 +330,7 @@
 					<quotes class="s-reviews__slide-quotes" itemprop="reviewBody" itemtype="https://schema.org/Thing">
 						Все выполнено в соответствии с ТЗ. Сроки были обговорены и работа выполнена без проблем в срок. 5/5
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_328080" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_328080" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -327,7 +348,7 @@
 						Большое спасибо за работу, справился с поставленной задачей, все было выполнено в срок, всегда на связи)
 						рекомендую!
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_327951" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_327951" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -346,7 +367,7 @@
 						посоветовал лучший
 						вариант хостинга и другие советы, которые мне как новичку бесценны! Спасибо
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_327587" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_327587" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -363,7 +384,7 @@
 					<quotes class="s-reviews__slide-quotes" itemprop="reviewBody" itemtype="https://schema.org/Thing">
 						Евгений быстро откликнулся на задание, так же быстро и качественно выполнил свою работу) Буду обращаться еще
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_327368" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_327368" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -383,7 +404,7 @@
 						советую обращаться :)
 						ответственный подход
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_325229" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_325229" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -400,7 +421,7 @@
 					<quotes class="s-reviews__slide-quotes" itemprop="reviewBody" itemtype="https://schema.org/Thing">
 						Отличный исполнителей. Проект выполнен оперативно и качественно. Рекомендую!
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_322145" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_322145" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -416,7 +437,7 @@
 					<quotes class="s-reviews__slide-quotes" itemprop="reviewBody" itemtype="https://schema.org/Thing">
 						Все оперативно и качественно.
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_316027" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_316027" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -434,7 +455,7 @@
 						основе и
 						Вам того же рекомендую. Огромное спасибо
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_315823" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_315823" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -451,7 +472,7 @@
 					<quotes class="s-reviews__slide-quotes" itemprop="reviewBody" itemtype="https://schema.org/Thing">
 						Мне подход понравился исполнителя, быстро, четко, не тормозил))
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_312764" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_312764" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -476,7 +497,7 @@
 						На Все необходимые исправления реагировал адекватно и быстро!
 						Впечатления положительные! Сразу было понятно что это тот человек который мне нужен! Советую!
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_312628" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_312628" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 
@@ -501,7 +522,7 @@
 						ещё,
 						рекомендую к сотрудничеству!
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_310779" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_310779" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 				<div class="s-reviews__slide" itemscope itemtype="https://schema.org/Review">
@@ -517,7 +538,7 @@
 					<quotes class="s-reviews__slide-quotes" itemprop="reviewBody" itemtype="https://schema.org/Thing">
 						Все отлично. Вовремя и качественно. Рекомендую!
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_309773" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_309773" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 				<div class="s-reviews__slide" itemscope itemtype="https://schema.org/Review">
@@ -534,7 +555,7 @@
 						Огромное спасибо Евгению, за качественно выполненную работу.
 						Побольше бы таких специалистов, Рекомендую!
 					</quotes>
-					<p><a href="https://freelance.ru/reviews/aigen/#review_309054" target="_blank" class="link">Ссылка на
+					<p><a href="https://freelance.ru/reviews/aigen/#review_309054" target="_blank" rel="noopener" class="link">Ссылка на
 							отзыв</a></p>
 				</div>
 			</div>
@@ -554,28 +575,28 @@
 					<td class="s-services__td" itemprop="name">Landing-Page</td>
 					<td class="s-services__td" itemtype="https://schema.org/PriceSpecification" itemprop="offers">
 						<span itemprop="priceCurrency" content="RUB">₽</span>
-						От <span itemprop="price" content="35000">35000</span> ₽
+						От <span itemprop="price" content="35000">30000</span> ₽
 					</td>
 				</tr>
 				<tr class="s-services__tr" itemscope itemtype="https://schema.org/Service">
 					<td class="s-services__td" itemprop="name">Сайт-Визитка</td>
 					<td class="s-services__td" itemtype="https://schema.org/PriceSpecification" itemprop="offers">
 						<span itemprop="priceCurrency" content="RUB">₽</span>
-						От <span itemprop="price" content="30000">30000</span> ₽
+						От <span itemprop="price" content="30000">25000</span> ₽
 					</td>
 				</tr>
 				<tr class="s-services__tr" itemscope itemtype="https://schema.org/Service">
 					<td class="s-services__td" itemprop="name">Сайт-Блог</td>
 					<td class="s-services__td" itemtype="https://schema.org/PriceSpecification" itemprop="offers">
 						<span itemprop="priceCurrency" content="RUB">₽</span>
-						От <span itemprop="price" content="50000">50000</span> ₽
+						От <span itemprop="price" content="50000">30000</span> ₽
 					</td>
 				</tr>
 				<tr class="s-services__tr" itemscope itemtype="https://schema.org/Service">
 					<td class="s-services__td" itemprop="name">Интернет-Магазин</td>
 					<td class="s-services__td" itemtype="https://schema.org/PriceSpecification" itemprop="offers">
 						<span itemprop="priceCurrency" content="RUB">₽</span>
-						От <span itemprop="price" content="70000">70000</span> ₽
+						От <span itemprop="price" content="70000">60000</span> ₽
 					</td>
 				</tr>
 				<tr class="s-services__tr" itemscope itemtype="https://schema.org/Service">
@@ -610,16 +631,16 @@
 
 			<div class="col s-tech__col">
 				<div class="s-tech__logo-list">
-					<img class="s-tech__logo-img" src="assets/img/tech/HTML5.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
-					<img class="s-tech__logo-img" src="assets/img/tech/CSS3.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
-					<img class="s-tech__logo-img" src="assets/img/tech/JavaScript.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
-					<img class="s-tech__logo-img" src="assets/img/tech/React.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
-					<img class="s-tech__logo-img" src="assets/img/tech/PHP.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
-					<img class="s-tech__logo-img" src="assets/img/tech/WordPress.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
-					<img class="s-tech__logo-img" src="assets/img/tech/WooCommerce.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
-					<img class="s-tech__logo-img" src="assets/img/tech/Jekyll.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
-					<img class="s-tech__logo-img" src="assets/img/tech/docker.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
-					<img class="s-tech__logo-img" src="assets/img/tech/Git.webp" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/logos_html-5.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/logos_css-3.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/devicon_javascript.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/devicon_react-wordmark.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/bxl_php.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/ic_baseline-wordpress.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/devicon-plain_woocommerce.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/logos_jekyll.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/logos_docker.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
+					<img class="s-tech__logo-img" src="assets/img/tech/logos_git.svg" alt="EVGENY BIL WEB - технологии разработки сайтов">
 				</div>
 				<h3>Front-end:</h3>
 				<ul>
@@ -689,58 +710,44 @@
 
 							<ol>
 								<li>
-									Заполнение брифа по разработке дизайна
+									Обсуждение проекта
+								</li>
+								<li>
+									<a data-element="window" href="brif" class="link">Заполнение брифа по разработке сайта</a>
 								</li>
 								<li>
 									Разработка макета дизайна в Figma, утверждение
 								</li>
 								<li>
-									Вёрстка страниц согласно макету, разработка функций на JavaScript
+									Вёрстка страниц согласно макету
 								</li>
 								<li>
-									Интеграция страниц на систему управления контентом (CMS) Wordpress, OpenCart. Так же есть возможность
+									Интеграция страниц на систему управления контентом (CMS) WordPress. Так же есть возможность
 									интеграции блога в генератор статичных страниц Jekyll для более быстрой загрузки страниц
+								</li>
+								<li>
+									Деплой сайта на хостинг <a href="https://beget.com/p1627316" rel="noopener" target="_blank" class="link">Бегет</a>
 								</li>
 								<li>
 									Заполнение сайта контентом (текст, изображения)
 								</li>
 								<li>
-									Подключение SEO инструментов от Google и Яндекс, настройка индексации
+									Первичная SEO оптимизация
 								</li>
 								<li>
-									SEO продвижение
+									SEO продвижение нашим партнёром
 								</li>
 								<li>
-									Запуск рекламы
+									Запуск рекламы на <a href="https://business.yandex.ru/" rel="noopener" target="_blank" class="link">Яндекс.Бизнес</a>
 								</li>
 							</ol>
-						</div>
-					</li>
-					<li class="accordion-item" itemscope itemtype="https://schema.org/Question">
-						<h3 class="s-faq__accordion-title" itemprop="name">Какой бюджет нужен для создания сайта?</h3>
-						<div class="s-faq__accordion-answer" itemprop="suggestedAnswer" itemscope
-							itemtype="https://schema.org/Answer">
-							<p>С ценами вы можете ознакомиться в разделе "<a data-element="window" href="services"
-									class="link">Услуги</a>". Там указана минимальная цена за проект</p>
 						</div>
 					</li>
 					<li class="accordion-item" itemscope itemtype="https://schema.org/Question">
 						<h3 class="s-faq__accordion-title" itemprop="name">Как долго занимает разработка сайта?</h3>
 						<div class="s-faq__accordion-answer" itemprop="suggestedAnswer" itemscope
 							itemtype="https://schema.org/Answer">
-							<p>Учитывая все этапы - от 3х недель и более. Зависит от сложности сайта</p>
-						</div>
-					</li>
-					<li class="accordion-item" itemscope itemtype="https://schema.org/Question">
-						<h3 class="s-faq__accordion-title" itemprop="name">Какие информационные материалы и данные нужны для начала
-							работы?</h3>
-						<div class="s-faq__accordion-answer" itemprop="suggestedAnswer" itemscope
-							itemtype="https://schema.org/Answer">
-							<ol>
-								<li>Заполненный бриф на разработку сайта</li>
-								<li>Техническое задание (ТЗ)</li>
-								<li>Материалы (текст, изображения), которые будут публиковаться на сайте</li>
-							</ol>
+							<p>Первое размещение сайта (с индивидуальным дизайном и интеграцией в WordPress) на хостинге занимает около 2-х недель. Зависит от сложности сайта</p>
 						</div>
 					</li>
 					<li class="accordion-item" itemscope itemtype="https://schema.org/Question">
@@ -756,7 +763,7 @@
 							систем (SEO)?</h3>
 						<div class="s-faq__accordion-answer" itemprop="suggestedAnswer" itemscope
 							itemtype="https://schema.org/Answer">
-							<p>Да, это входит в наш список <a data-element="window" href="services" class="link">услуг</a></p>
+							<p>Да, я являюсь партнёром агенства SEO продвижения <a href="https://caps-group.ru/" target="_blank" rel="noopener" class="link">CAPS GROUP</a></p>
 						</div>
 					</li>
 					<li class="accordion-item" itemscope itemtype="https://schema.org/Question">
@@ -774,7 +781,7 @@
 						</h3>
 						<div class="s-faq__accordion-answer" itemprop="suggestedAnswer" itemscope
 							itemtype="https://schema.org/Answer">
-							<p>Оплата совершается по реквизитам счёта</p>
+							<p>Оплата совершается по реквизитам счёта (для ИП и Юридических Лиц) или на карту</p>
 						</div>
 					</li>
 					<li class="accordion-item" itemscope itemtype="https://schema.org/Question">
@@ -796,11 +803,61 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="s s-personal s--modal" data-section="personal">
+		<div class="container">
+			<h2>Обработка персональных данных</h2>
+		</div>
+		<div class="container s-personal__container">
+			<p>Мы ценим ваше доверие и обязуемся бережно обращаться с вашими персональными данными. Данное уведомление описывает, какие данные мы собираем и как мы планируем их использовать.</p>
+
+			<h3>Собираемые данные:</h3>
+			<p>При заполнении формы отправки заявки, мы собираем следующие персональные данные:</p>
+			<ul>
+				<li>Ваше имя клиента;</li>
+				<li>Номер телефона;</li>
+				<li>Адрес электронной почты";</li>
+				<li>Сообщение;</li>
+			</ul>
+			
+			<h3>Цель сбора данных</h3>
+			<p>Мы используем предоставленные вами персональные данные исключительно для обработки и рассмотрения вашей заявки, а также для связи с вами по поводу вашего обращения. Ваши контактные данные могут быть использованы для отправки уведомлений и ответов на ваши вопросы или запросы.</p>
+
+			<h3>Защита данных</h3>
+			<p>Мы прилагаем все усилия для защиты ваших персональных данных от несанкционированного доступа, утечек, изменений или уничтожения. Ваши данные хранятся на защищенных серверах и доступ к ним ограничен только сотрудникам, которым это необходимо для обработки заявок.</p>
+
+			<h3>Срок хранения данных</h3>
+			<p>Ваши персональные данные будут храниться у нас только в течение периода, необходимого для рассмотрения вашей заявки и обработки запроса. По окончании этого периода мы удалим ваши данные из наших систем, если только иное не предусмотрено законодательством.</p>
+
+			<h3>Права пользователей</h3>
+			<p>У вас есть право запросить доступ к вашим персональным данным, а также внести необходимые исправления, если они будут неточными или устаревшими. Вы также можете в любой момент отозвать свое согласие на обработку данных, и мы удалить ваши данные из нашей базы данных.</p>
+
+			<h3>Согласие на обработку данных</h3>
+			<p>Отправляя заявку через нашу форму, вы выражаете согласие на сбор и обработку предоставленных вами персональных данных в соответствии с описанными выше целями.</p>
+
+			<p>Если у вас возникли вопросы или требуется дополнительная информация о нашей политике обработки персональных данных, пожалуйста, свяжитесь с нами по указанным на сайте контактным данным.</p>
+
+			<p>Спасибо за ваше понимание и доверие к нам!</p>
+
+			<p>С уважением,<br>
+			evgenybil.site</p>
+		</div>
+	</section>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="assets/libs/normalize.css/normalize.css">
+	<link rel="stylesheet" href="assets/libs/hamburgers-master/hamburgers.css">
+	<link rel="stylesheet" href="assets/libs/slick-1.8.1/slick.css">
+	<link rel="stylesheet" href="assets/libs/vex-master/css/vex.css">
+	<link rel="stylesheet" href="assets/libs/vex-master/css/vex-theme-wireframe.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="assets/libs/jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
+	<script src="assets/libs/Inputmask/jquery.inputmask.min.js"></script>
+	<script src="assets/libs/slick-1.8.1/slick.min.js"></script>
+	<script src="assets/libs/vex-master/js/vex.combined.min.js"></script>
+	<script>vex.defaultOptions.className = 'vex-theme-wireframe'</script>
+	<script src="assets/js/common.js"></script>
 </body>
-<script src="assets/libs/jquery/code.jquery.com_jquery-3.7.0.min.js"></script>
-<script src="assets/libs/slick-1.8.1/slick.min.js"></script>
-<script src="assets/libs/vex-master/js/vex.combined.min.js"></script>
-<script>vex.defaultOptions.className = 'vex-theme-wireframe'</script>
-<script src="assets/js/common.js"></script>
 
 </html>

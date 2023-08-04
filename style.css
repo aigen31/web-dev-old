@@ -1,173 +1,11 @@
-@font-face {
-	font-family: 'Catamaran';
-	src: url('assets/fonts/Catamaran-ExtraBold.woff2') format('woff2');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Catamaran';
-	src: url('assets/fonts/Catamaran-Light.woff2') format('woff2');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Catamaran';
-	src: url('assets/fonts/Catamaran-Medium.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Catamaran';
-	src: url('assets/fonts/Catamaran-Bold.woff2') format('woff2');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Catamaran';
-	src: url('assets/fonts/Catamaran-Black.woff2') format('woff2');
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Catamaran';
-	src: url('assets/fonts/Catamaran-ExtraLight.woff2') format('woff2');
-	font-weight: 200;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Catamaran';
-	src: url('assets/fonts/Catamaran-Thin.woff2') format('woff2');
-	font-weight: 100;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Catamaran';
-	src: url('assets/fonts/Catamaran-SemiBold.woff2') format('woff2');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Catamaran';
-	src: url('assets/fonts/Catamaran-Regular.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-MediumItalic.woff2') format('woff2');
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-Heavy.woff2') format('woff2');
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-BoldItalic.woff2') format('woff2');
-	font-weight: bold;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-Bold.woff2') format('woff2');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-HeavyItalic.woff2') format('woff2');
-	font-weight: 900;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-LightItalic.woff2') format('woff2');
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-Light.woff2') format('woff2');
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-Medium.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-Regular.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-RegularItalic.woff2') format('woff2');
-	font-weight: normal;
-	font-style: italic;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-Semibold.woff2') format('woff2');
-	font-weight: 600;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'SF Pro Text';
-	src: url('assets/fonts/SFProText-SemiboldItalic.woff2') format('woff2');
-	font-weight: 600;
-	font-style: italic;
-	font-display: swap;
+.preloader {
+	animation: fadeOut .25s ease forwards;
 }
 
 :root {
   --header-margin: 120px;
+	--accent-color: #FFBB00;
+	--accent-second-color: #D89E00;
 }
 
 html {
@@ -211,7 +49,7 @@ img {
 }
 
 .btn {
-  background-color: #FFBB00;
+  background-color: var(--accent-color);
   display: inline-block;
   position: relative;
   border: 0;
@@ -416,7 +254,7 @@ img {
 }
 
 .menu-wrapper__item .link:hover {
-  color: #FFBB00;
+  color: var(--accent-color);
 }
 
 .social-icon .social__path {
@@ -509,7 +347,7 @@ img {
   line-height: 98.69%;
   letter-spacing: 0.005em;
   display: inline-block;
-  max-width: 220px;
+  /* max-width: 220px; */
 }
 
 .s-main__item {
@@ -530,7 +368,7 @@ img {
   position: absolute;
   display: block;
   top: 50%;
-  left: calc(100% + 62px);
+  right: 0;
   transform: translateX(0px) translateY(-50%);
   transition: transform .15s ease;
   height: 19.7px;
@@ -542,8 +380,7 @@ img {
 }
 
 .s-main__item .link:hover::after {
-  left: calc(100% + 62px);
-  transform: translateX(100px) translateY(-50%);
+  transform: translateX(100%) translateY(-50%);
 }
 
 .s-main__btn {
@@ -555,11 +392,12 @@ img {
 }
 
 .btn:hover {
-  background-color: #D89E00;
+  background-color: var(--accent-second-color);
 }
 
 .s-main__list .link {
   color: #F8F8F8;
+	padding-right: 100px;
 }
 
 .s-main__h1 {
@@ -674,7 +512,7 @@ img {
 }
 
 .s-nav__item .s-nav__link {
-  color: #FFBB00;
+  color: var(--accent-color);
   font-size: .9em;
 	font-weight: 500;
   transition: color .15s ease;
@@ -815,7 +653,7 @@ img {
   position: absolute;
   z-index: -1;
   font-size: 15em;
-  color: #FFBB00;
+  color: var(--accent-color);
   opacity: .5;
   font-weight: bold;
   line-height: 0;
@@ -856,7 +694,7 @@ img {
 }
 
 .s-services__td span {
-	color: #FFBB00;
+	color: var(--accent-color);
 }
 
 .s--modal {
@@ -936,6 +774,11 @@ img {
 
 .s-tech__logo-img {
 	height: 100px;
+}
+
+.s-brif__container {
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (min-width: 1600px) {
