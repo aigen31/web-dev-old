@@ -1,4 +1,15 @@
 $(document).ready(function() {
+	function hamburgerEvent() {
+    $('#hamburger__main, .overlay').click(function () {
+      $('.menu-wrapper').toggleClass('active');
+      $('.overlay').toggleClass('active');
+      $('#hamburger__main').toggleClass('is-active');
+			history.replaceState( {} , "", "/" );
+    })
+  }
+
+  hamburgerEvent();
+
   setTimeout(() => {
     $("body").removeClass("preload");
   }, 1500)
@@ -90,16 +101,6 @@ $(document).ready(function() {
   }
 
   $(window).resize(resize)
-
-  function hamburgerEvent() {
-    $('#hamburger__main, .overlay').click(function () {
-      $('.menu-wrapper').toggleClass('active');
-      $('.overlay').toggleClass('active');
-      $('#hamburger__main').toggleClass('is-active');
-    })
-  }
-
-  hamburgerEvent();
 
   $('#menu-wrapper__close-button').click(function() {
     $('.menu-wrapper').removeClass('active');
@@ -221,9 +222,9 @@ $(document).ready(function() {
     $('.menu-wrapper').removeClass('active');
     $('.overlay').removeClass('active');
 
-    $('.s-nav__item').not($(`.s-nav__item .link[href=${$(this).attr('href')}]`).closest('.s-nav__item')).removeClass('active');
+    $('.s-nav__item').not($(`.s-nav__item .link[href="${$(this).attr('href')}"]`).closest('.s-nav__item')).removeClass('active');
 
-    $(`.s-nav__item .link[href=${$(this).attr('href')}]`).closest('.s-nav__item').addClass('active');
+    $(`.s-nav__item .link[href="${$(this).attr('href')}]"`).closest('.s-nav__item').addClass('active');
 
     $(`[data-section]`).not($(`[data-section="${$(this).attr('href')}"]`)).removeClass('active');
 
