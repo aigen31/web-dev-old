@@ -1,2 +1,3 @@
 assets/**/*.md
 .vscode
+node_modules

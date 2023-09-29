@@ -224,7 +224,7 @@ $(document).ready(function() {
 
     $('.s-nav__item').not($(`.s-nav__item .link[href="${$(this).attr('href')}"]`).closest('.s-nav__item')).removeClass('active');
 
-    $(`.s-nav__item .link[href="${$(this).attr('href')}]"`).closest('.s-nav__item').addClass('active');
+    $('.s-nav__item .link[href="' + $(this).attr('href') + '"]').closest('.s-nav__item').addClass('active');
 
     $(`[data-section]`).not($(`[data-section="${$(this).attr('href')}"]`)).removeClass('active');
 
