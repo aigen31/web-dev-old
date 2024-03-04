@@ -146,7 +146,7 @@ $(document).ready(function() {
           <textarea class="s-main__textarea" name="message" placeholder="Сообщение" maxlength="55" required /></textarea>
 					<label for="checkbox">
 					<input type="checkbox" id="checkbox" required>
-					Я соглашаюсь на обработку персональных данных
+					Я соглашаюсь на <a href="https://evgenybil.site/policy.pdf">обработку персональных данных</a>
 					</label>`
         ].join(''),
         buttons: [
