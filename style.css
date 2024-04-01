@@ -997,6 +997,10 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+	.s-main__list .link {
+		padding-right: 0;
+	}
+	
   .s-nav__item .s-nav__link {
     white-space: nowrap;
   }
